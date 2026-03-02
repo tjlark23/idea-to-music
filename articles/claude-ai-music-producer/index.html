@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How I Use Claude AI as My Music Producer | Idea to Music</title>
+    <meta name="description" content="Most articles about AI music focus on the generation tool — Suno, Udio, whatever's next. Those are the instruments. But the real breakthrough in my workflo" />
+    <meta property="og:title" content="How I Use Claude AI as My Music Producer" />
+    <meta property="og:description" content="Most articles about AI music focus on the generation tool — Suno, Udio, whatever's next. Those are the instruments. But the real breakthrough in my workflo" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ideatomusic.com/articles/claude-ai-music-producer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { black: '#08313a', white: '#f8f9fa', retro: { yellow: '#e9ae4a', orange: '#e76f51', black: '#08313a', white: '#f8f9fa', gray: '#c7d5e0' } },
+            fontFamily: { sans: ['Outfit','system-ui','sans-serif'], mono: ['JetBrains Mono','ui-monospace','monospace'] },
+            boxShadow: { 'retro': '4px 4px 0px 0px #08313a', 'retro-lg': '8px 8px 0px 0px #08313a', 'retro-hover': '2px 2px 0px 0px #08313a' },
+            borderWidth: { '3': '3px' },
+          },
+        },
+      }
+    </script>
+    <style>
+      body { background-color: #f8f9fa; color: #08313a; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+      .bg-grid-pattern { background-size: 40px 40px; background-image: linear-gradient(to right, #c7d5e0 1px, transparent 1px), linear-gradient(to bottom, #c7d5e0 1px, transparent 1px); }
+    </style>
+</head>
+<body class="bg-grid-pattern selection:bg-retro-yellow selection:text-black min-h-screen">
+    <!-- NAV -->
+    <nav class="fixed w-full z-50 bg-white border-b-3 border-black" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
+                    <span class="font-black text-xl tracking-tighter">idea to music</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Showcase</a>
+                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest bg-retro-yellow px-2 py-1 border border-black">Articles</a>
+                    <a href="/course" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Course</a>
+                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Tools</a>
+                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">About</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-retro-orange text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-black shadow-retro hover:bg-retro-yellow hover:text-black transition-all">Get a Custom Song</a>
+                </div>
+                <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+        <div id="mob-menu" class="hidden lg:hidden bg-white border-b-3 border-black w-full absolute">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="/#showcase" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Showcase</a>
+                <a href="/articles" class="block px-4 py-3 font-bold uppercase border-2 border-black bg-retro-yellow">Articles</a>
+                <a href="/course" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Course</a>
+                <a href="/tools" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Tools</a>
+                <a href="/#about" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">About</a>
+                <a href="https://www.songsforyourstory.com/" target="_blank" class="block px-4 py-3 font-bold uppercase bg-retro-orange text-white border-2 border-black shadow-retro text-center">Get a Custom Song</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20">
+        <article class="max-w-3xl mx-auto px-6">
+            <!-- Breadcrumb -->
+            <div class="mb-8">
+                <a href="/articles" class="font-mono text-xs text-retro-orange font-bold uppercase hover:underline">&larr; All Articles</a>
+            </div>
+
+            <!-- Header -->
+            <div class="mb-10">
+                <div class="flex gap-2 mb-4">
+                    <span class="font-mono text-[10px] font-bold border-2 border-black px-2 py-0.5 uppercase bg-retro-yellow">Story</span>
+                    <span class="font-mono text-[10px] font-bold border border-black/20 px-2 py-0.5 uppercase text-black/50">6 min read</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.95] mb-4">How I Use Claude AI as My Music Producer</h1>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-retro-orange border-2 border-black flex items-center justify-center text-white font-black text-sm">TJ</div>
+                    <div>
+                        <span class="font-bold text-sm">TJ Larkin</span>
+                        <span class="font-mono text-[10px] text-black/40 block">Idea to Music</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="article-body">
+                
+<p class="font-mono text-sm leading-relaxed mb-4">Most articles about AI music focus on the generation tool — Suno, Udio, whatever's next. Those are the instruments. But the real breakthrough in my workflow isn't the instrument. It's the producer.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Claude is my music producer. And that probably sounds bizarre until I explain what I mean.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">What a Music Producer Actually Does</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">A music producer doesn't usually play the instruments. They make decisions. What should the song sound like? What genre fits this concept? How should the arrangement build? Is the vocal performance right? Does the bridge work? Should the chorus hit harder?</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Producers are the creative directors of music. They hold the vision, make the calls, and guide the session toward the best possible output.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">That's exactly what I use Claude for.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Claude Project Setup</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Every AI artist I've created lives in a Claude Project. Inside that project are three things:</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">The artist profile — the Sound DNA document that captures every detail about how the artist sounds. Vocal characteristics, instrumentation hierarchy, production style, tempo ranges, lyrical themes and vocabulary.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">The prompt templates — 3-5 tested Suno style prompts for different song types within this artist's range.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">The skill files — three specialized AI tools I built that automate the creative process. An Artist Engine for building new artists, a Lyric Writer for crafting Suno-optimized lyrics, and Genre Templates with tested prompt libraries.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">When I open that project and start talking to Claude, it knows everything about my artist. It knows the sound. It knows the style. It knows what works in Suno and what doesn't. It's a producer with perfect memory and zero ego.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">A Typical Session</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Here's what a songwriting session looks like:</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">I open my Cormac Riley project in Claude and say: "I want to write a song about watching Charlie learn to ride his scooter. He kept falling and getting back up. The mood should be warm and proud — a dad watching his kid figure something out. Mid-tempo, acoustic."</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Claude immediately knows this maps to Cormac Riley's "Upbeat Acoustic" template. It knows the vocal style, the instrumentation, the production approach. It doesn't ask me about any of that because the project context already has it.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Claude writes lyrics using the lyric-writing skill — consistent syllable counts, rhyme scheme, Charlie's name at the start of lines, open vowel sounds on chorus endings, one emotion per section. It structures the song with proper tags.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">I review. I adjust. Maybe I change a line that doesn't feel right. Maybe I add a detail Claude couldn't know — the specific sound of his scooter wheels on the driveway. We go back and forth for a few minutes.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Then Claude gives me the final lyrics and confirms which prompt template to use. I paste both into Suno and generate.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">The whole session — from concept to ready-to-generate — takes about 10 minutes. Without Claude, writing lyrics alone used to take me 30-45 minutes, and the quality was worse because I was trying to remember all the Suno optimization rules manually.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">Why Skill Files Change Everything</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">The skill files are what make Claude a great producer instead of a generic assistant.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Without the skill files, Claude knows about music in general. It can write decent lyrics and suggest prompt ideas. But it doesn't know that Suno responds to "intimate" differently than "personal." It doesn't know that chorus lines ending on open vowels produce better output. It doesn't know that fingerpicked guitar creates a completely different texture than strummed guitar in Suno specifically.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">With the skill files, Claude knows all of that. Every lesson I've learned from 200+ songs is encoded in the skills. Every tested prompt, every lyric technique, every troubleshooting tip. Claude doesn't just help me write songs — it helps me write songs optimized for the specific tool I'm using.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">It's the difference between asking a random person for music advice and asking a producer who's been in the studio with you for months.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Portfolio Effect</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Over time, each Claude Project becomes a complete creative portfolio for that artist. Every conversation is stored. Every lyric choice, every prompt adjustment, every generation note. If I want to reference what worked on a previous song, it's all there.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">"Last time I wrote a ballad for Cormac Riley, what tempo did we land on?" Claude can reference the conversation and tell me. "The bridge from the Noelle birthday song worked really well — can we use a similar structure for this one?" Claude knows what I'm talking about.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">This is how real producers work with real artists. They build institutional knowledge about the artist's sound over time. Claude does the same thing, except it never forgets.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">What Claude Can't Do</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Claude can't listen to music. It can't evaluate whether a Suno generation sounds good. It can't tell me "that vocal is slightly pitchy in the second verse." The aesthetic judgment is still mine.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Claude also can't generate the music itself. It builds the blueprint — the lyrics, the prompt, the structural plan — but the actual audio generation happens in Suno. Claude is the architect. Suno is the construction crew.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">And Claude can't replace genuine personal experience. When I tell it about watching Charlie on his scooter, Claude can craft beautiful lyrics about that moment. But the emotional truth came from me. The AI shapes it. I provide it.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Multiplier Effect</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">The biggest impact of using Claude as a producer is speed without quality loss.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Before the skill files and project setup, a good song took me 60-90 minutes from concept to final generation. Research the genre, figure out the prompt, write lyrics, remember all the Suno tricks, iterate.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Now it takes 15-25 minutes. Same quality — often better, because the skill files catch things I'd miss. But dramatically faster because every decision has a framework, and the framework lives in Claude's context permanently.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">At 15 minutes per song, I can produce 4 songs in an hour. In a focused afternoon, I can create 8-10 songs. That's a small album. In an afternoon.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">Try It Yourself</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">The simplest version of this: create a Claude Project for your music. Add a description of the kind of music you want to make. Include your favorite artists as reference points. Describe the vocal style, instrumentation, and mood you're aiming for.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Then when you start a conversation in that project, Claude has context. It's not starting from zero every time. It knows your sound.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">For the full production system — the three skill files that make Claude a specialized music producer — that's the core deliverable of the Suno Mastery course.</p>
+
+<hr class="border-t-2 border-retro-gray my-8">
+
+<p class="font-mono text-sm leading-relaxed mb-4"><em>Claude didn't write this article, but it did produce the artist I'm writing about. The skill files are the bridge between "Claude is a helpful assistant" and "Claude is my creative collaborator." That's the difference the course teaches.</em></p>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-12 bg-black text-white border-3 border-black p-8 shadow-retro-lg">
+                <h3 class="font-black text-xl uppercase mb-3">Want to learn the full system?</h3>
+                <p class="font-mono text-sm text-retro-gray mb-6">The complete prompt library, lyric techniques, artist-building framework, and Claude AI skill files.</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="/course" class="bg-retro-yellow text-black border-2 border-retro-yellow px-6 py-3 font-bold uppercase text-sm text-center hover:bg-retro-orange hover:text-white transition-all">View the Course</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="border-2 border-white px-6 py-3 font-bold uppercase text-sm text-center hover:bg-white hover:text-black transition-all">Get a Custom Song</a>
+                </div>
+            </div>
+
+            <!-- Related -->
+            <div class="mt-16">
+                <h3 class="font-black text-xl uppercase tracking-tight mb-6 border-b-3 border-black pb-2">Keep Reading</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    
+            <a href="/articles/fake-music-artist-with-ai" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Story</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">I Built a Fake Music Artist Using AI — Here's Exactly How</h4>
+                <span class="font-mono text-[10px] text-black/50">5 min read</span>
+            </a>
+            <a href="/articles/custom-birthday-song-ai" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Story</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">I Made My Daughter a Custom Birthday Song with AI (Here's Ho...</h4>
+                <span class="font-mono text-[10px] text-black/50">5 min read</span>
+            </a>
+            <a href="/articles/replaced-spotify-discover" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Story</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">I Replaced My Spotify Discover Weekly with Songs I Made Myse...</h4>
+                <span class="font-mono text-[10px] text-black/50">4 min read</span>
+            </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t-3 border-black py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 font-mono text-xs font-bold uppercase tracking-wider">
+                    <a href="/#showcase" class="hover:text-retro-orange">Showcase</a>
+                    <a href="/articles" class="hover:text-retro-orange">Articles</a>
+                    <a href="/course" class="hover:text-retro-orange">Course</a>
+                    <a href="/tools" class="hover:text-retro-orange">Tools</a>
+                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-retro-orange">TJ Larkin</a>
+                </div>
+                <span class="font-mono text-xs text-black/50">&copy; 2026 Idea to Music</span>
+            </div>
+        </div>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', () => { if (typeof lucide !== 'undefined') lucide.createIcons(); });</script>
+</body>
+</html>

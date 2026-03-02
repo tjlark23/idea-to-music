@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles | Idea to Music</title>
+    <meta name="description" content="Learn how to make professional AI music. Guides, tutorials, and stories about producing music with Suno AI." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { black: '#08313a', white: '#f8f9fa', retro: { yellow: '#e9ae4a', orange: '#e76f51', black: '#08313a', white: '#f8f9fa', gray: '#c7d5e0' } },
+            fontFamily: { sans: ['Outfit','system-ui','sans-serif'], mono: ['JetBrains Mono','ui-monospace','monospace'] },
+            boxShadow: { 'retro': '4px 4px 0px 0px #08313a', 'retro-lg': '8px 8px 0px 0px #08313a', 'retro-hover': '2px 2px 0px 0px #08313a' },
+            borderWidth: { '3': '3px' },
+          },
+        },
+      }
+    </script>
+    <style>
+      body { background-color: #f8f9fa; color: #08313a; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+      .bg-grid-pattern { background-size: 40px 40px; background-image: linear-gradient(to right, #c7d5e0 1px, transparent 1px), linear-gradient(to bottom, #c7d5e0 1px, transparent 1px); }
+    </style>
+</head>
+<body class="bg-grid-pattern selection:bg-retro-yellow selection:text-black min-h-screen">
+    <nav class="fixed w-full z-50 bg-white border-b-3 border-black" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
+                    <span class="font-black text-xl tracking-tighter">idea to music</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Showcase</a>
+                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest bg-retro-yellow px-2 py-1 border border-black">Articles</a>
+                    <a href="/course" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Course</a>
+                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Tools</a>
+                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">About</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-retro-orange text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-black shadow-retro hover:bg-retro-yellow hover:text-black transition-all">Get a Custom Song</a>
+                </div>
+                <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+        <div id="mob-menu" class="hidden lg:hidden bg-white border-b-3 border-black w-full absolute">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="/#showcase" class="block px-4 py-3 font-bold uppercase border-2 border-black hover:bg-retro-yellow transition-all">Showcase</a>
+                <a href="/articles" class="block px-4 py-3 font-bold uppercase border-2 border-black bg-retro-yellow">Articles</a>
+                <a href="/course" class="block px-4 py-3 font-bold uppercase border-2 border-black hover:bg-retro-yellow transition-all">Course</a>
+                <a href="/tools" class="block px-4 py-3 font-bold uppercase border-2 border-black hover:bg-retro-yellow transition-all">Tools</a>
+                <a href="/#about" class="block px-4 py-3 font-bold uppercase border-2 border-black hover:bg-retro-yellow transition-all">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-28 pb-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="mb-12">
+                <div class="bg-retro-orange text-white inline-block px-3 py-1 font-mono text-xs font-bold uppercase tracking-widest mb-4">Learn AI Music</div>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">Articles</h1>
+                <p class="font-mono text-sm text-black/60 max-w-xl">Guides, tutorials, and stories about making professional music with AI. Everything I've learned from producing 200+ songs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <a href="/articles/complete-guide-suno" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-yellow">Guide</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">7 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">The Complete Guide to Making Professional Music with Suno AI (2026)</h3>
+                        <p class="font-mono text-xs text-black/60">Three months ago I couldn't read sheet music. I still can't. But I've produced over 200 songs across five different AI-g...</p>
+                    </div>
+                </a>
+                <a href="/articles/why-ai-music-sounds-like-ai" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-yellow">Guide</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">Why Your AI Music Sounds Like AI (And How to Fix It)</h3>
+                        <p class="font-mono text-xs text-black/60">I played one of my AI-generated songs for a friend last week. She asked me to send her the Spotify link.</p>
+                    </div>
+                </a>
+                <a href="/articles/suno-vs-udio" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-gray">Comparison</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">3 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">Suno vs Udio: Which AI Music Tool Actually Produces Quality in 2026?</h3>
+                        <p class="font-mono text-xs text-black/60">I've generated over 200 songs in Suno. I've also spent enough time in Udio to have an informed opinion. Here's my honest...</p>
+                    </div>
+                </a>
+                <a href="/articles/fake-music-artist-with-ai" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-black text-white">Story</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">I Built a Fake Music Artist Using AI &mdash; Here's Exactly How</h3>
+                        <p class="font-mono text-xs text-black/60">His name is Cormac Riley. He's from Georgetown, Texas. He makes warm, hopeful singer-songwriter music that sounds like J...</p>
+                    </div>
+                </a>
+                <a href="/articles/custom-birthday-song-ai" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-black text-white">Story</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">I Made My Daughter a Custom Birthday Song with AI (Here's How)</h3>
+                        <p class="font-mono text-xs text-black/60">Noelle turned nine last month. I wanted to give her something she'd never forget. Not a gift card. Not another toy that ...</p>
+                    </div>
+                </a>
+                <a href="/articles/suno-prompt-formula" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">6 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">The Suno Prompt Formula That Changed Everything</h3>
+                        <p class="font-mono text-xs text-black/60">For my first 50 songs in Suno, I typed things like "acoustic song about love" and hit generate. The results were fine. G...</p>
+                    </div>
+                </a>
+                <a href="/articles/write-lyrics-for-suno" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">7 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">How to Write Song Lyrics That Suno Actually Sings Well</h3>
+                        <p class="font-mono text-xs text-black/60">I wrote what I thought were beautiful lyrics. Imagery. Metaphor. Unexpected word choices. Real poetry.</p>
+                    </div>
+                </a>
+                <a href="/articles/suno-style-tags-tested" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">10 Suno Style Tags That Actually Make a Difference (Tested)</h3>
+                        <p class="font-mono text-xs text-black/60">I've tested hundreds of Suno style tag combinations. Most words you type into the style field do something. But some wor...</p>
+                    </div>
+                </a>
+                <a href="/articles/country-music-suno" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">3 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">How to Make Country Music with Suno AI</h3>
+                        <p class="font-mono text-xs text-black/60">My first attempt at AI country music sounded like a parody. Steel guitar drowning everything. Vocals that sounded more l...</p>
+                    </div>
+                </a>
+                <a href="/articles/rnb-suno" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">3 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">How to Make R&B with Suno AI</h3>
+                        <p class="font-mono text-xs text-black/60">R&B might be the genre where the gap between bad AI music and good AI music is widest. Bad AI R&B sounds like a karaoke ...</p>
+                    </div>
+                </a>
+                <a href="/articles/kids-songs-suno" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">How to Make Kids Songs with Suno AI (That Don't Sound Creepy)</h3>
+                        <p class="font-mono text-xs text-black/60">My six-year-old and nine-year-old helped me write a song about learning from mistakes. We called it "Mistakes Are How We...</p>
+                    </div>
+                </a>
+                <a href="/articles/pop-rock-suno" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">4 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">How to Make Pop-Rock with Suno AI</h3>
+                        <p class="font-mono text-xs text-black/60">Pop-rock is where Suno flexes hardest. The combination of catchy vocals, electric guitars, and punchy drums is right in ...</p>
+                    </div>
+                </a>
+                <a href="/articles/lofi-hiphop-suno" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">4 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">How to Make Lo-Fi Hip-Hop Beats with Suno</h3>
+                        <p class="font-mono text-xs text-black/60">Lo-fi hip-hop is one of the easiest genres to produce well in Suno — and one of the most commercially useful. Background...</p>
+                    </div>
+                </a>
+                <a href="/articles/ai-music-going-to-be-huge" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-yellow">Business</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">AI Music Is Going to Be Huge &mdash; But Not How You Think</h3>
+                        <p class="font-mono text-xs text-black/60">Everyone's arguing about whether AI will replace musicians. That's the wrong debate.</p>
+                    </div>
+                </a>
+                <a href="/articles/replaced-spotify-discover" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-black text-white">Story</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">4 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">I Replaced My Spotify Discover Weekly with Songs I Made Myself</h3>
+                        <p class="font-mono text-xs text-black/60">Every Monday, Spotify gives me 30 songs it thinks I'll like. I listen to maybe five. I save maybe one. Most weeks, zero.</p>
+                    </div>
+                </a>
+                <a href="/articles/custom-ai-songs-side-hustle" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-yellow">Business</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">The $250 Side Hustle Nobody's Talking About: Custom AI Songs</h3>
+                        <p class="font-mono text-xs text-black/60">Every birthday party, wedding, retirement, and graduation needs one thing nobody budgets for: a personal touch that make...</p>
+                    </div>
+                </a>
+                <a href="/articles/what-musicians-get-wrong" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-white">Opinion</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">4 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">What Musicians Get Wrong About AI Music</h3>
+                        <p class="font-mono text-xs text-black/60">I'm not a musician. I can't play an instrument or read sheet music. But I've produced over 200 songs using AI that regul...</p>
+                    </div>
+                </a>
+                <a href="/articles/sound-like-favorite-artist" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">How to Make a Song Sound Like Your Favorite Artist in Suno</h3>
+                        <p class="font-mono text-xs text-black/60">You know that feeling when a song captures exactly the vibe of your favorite artist — same warmth, same energy, same pro...</p>
+                    </div>
+                </a>
+                <a href="/articles/suno-iteration-cycle" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-retro-orange text-white">Tutorial</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">5 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">The Suno Iteration Cycle: How to Go from Good to Great</h3>
+                        <p class="font-mono text-xs text-black/60">Nobody tells you the most important skill in AI music production isn't prompting or lyric writing. It's knowing how to l...</p>
+                    </div>
+                </a>
+                <a href="/articles/claude-ai-music-producer" class="bg-white border-3 border-black shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase bg-black text-white">Story</span>
+                            <span class="font-mono text-[10px] text-black/40 px-1">6 min</span>
+                        </div>
+                        <h3 class="font-black text-base uppercase mb-2 leading-tight">How I Use Claude AI as My Music Producer</h3>
+                        <p class="font-mono text-xs text-black/60">Most articles about AI music focus on the generation tool — Suno, Udio, whatever's next. Those are the instruments. But ...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t-3 border-black py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 font-mono text-xs font-bold uppercase tracking-wider">
+                    <a href="/#showcase" class="hover:text-retro-orange">Showcase</a>
+                    <a href="/articles" class="hover:text-retro-orange">Articles</a>
+                    <a href="/course" class="hover:text-retro-orange">Course</a>
+                    <a href="/tools" class="hover:text-retro-orange">Tools</a>
+                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-retro-orange">TJ Larkin</a>
+                </div>
+                <span class="font-mono text-xs text-black/50">&copy; 2026 Idea to Music</span>
+            </div>
+        </div>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', () => { if (typeof lucide !== 'undefined') lucide.createIcons(); });</script>
+</body>
+</html>

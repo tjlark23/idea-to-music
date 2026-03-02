@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Make Country Music with Suno AI | Idea to Music</title>
+    <meta name="description" content="My first attempt at AI country music sounded like a parody. Steel guitar drowning everything. Vocals that sounded more like a robot than a honky-tonk. Lyri" />
+    <meta property="og:title" content="How to Make Country Music with Suno AI" />
+    <meta property="og:description" content="My first attempt at AI country music sounded like a parody. Steel guitar drowning everything. Vocals that sounded more like a robot than a honky-tonk. Lyri" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ideatomusic.com/articles/country-music-suno" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { black: '#08313a', white: '#f8f9fa', retro: { yellow: '#e9ae4a', orange: '#e76f51', black: '#08313a', white: '#f8f9fa', gray: '#c7d5e0' } },
+            fontFamily: { sans: ['Outfit','system-ui','sans-serif'], mono: ['JetBrains Mono','ui-monospace','monospace'] },
+            boxShadow: { 'retro': '4px 4px 0px 0px #08313a', 'retro-lg': '8px 8px 0px 0px #08313a', 'retro-hover': '2px 2px 0px 0px #08313a' },
+            borderWidth: { '3': '3px' },
+          },
+        },
+      }
+    </script>
+    <style>
+      body { background-color: #f8f9fa; color: #08313a; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+      .bg-grid-pattern { background-size: 40px 40px; background-image: linear-gradient(to right, #c7d5e0 1px, transparent 1px), linear-gradient(to bottom, #c7d5e0 1px, transparent 1px); }
+    </style>
+</head>
+<body class="bg-grid-pattern selection:bg-retro-yellow selection:text-black min-h-screen">
+    <!-- NAV -->
+    <nav class="fixed w-full z-50 bg-white border-b-3 border-black" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
+                    <span class="font-black text-xl tracking-tighter">idea to music</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Showcase</a>
+                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest bg-retro-yellow px-2 py-1 border border-black">Articles</a>
+                    <a href="/course" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Course</a>
+                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Tools</a>
+                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">About</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-retro-orange text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-black shadow-retro hover:bg-retro-yellow hover:text-black transition-all">Get a Custom Song</a>
+                </div>
+                <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+        <div id="mob-menu" class="hidden lg:hidden bg-white border-b-3 border-black w-full absolute">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="/#showcase" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Showcase</a>
+                <a href="/articles" class="block px-4 py-3 font-bold uppercase border-2 border-black bg-retro-yellow">Articles</a>
+                <a href="/course" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Course</a>
+                <a href="/tools" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Tools</a>
+                <a href="/#about" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">About</a>
+                <a href="https://www.songsforyourstory.com/" target="_blank" class="block px-4 py-3 font-bold uppercase bg-retro-orange text-white border-2 border-black shadow-retro text-center">Get a Custom Song</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20">
+        <article class="max-w-3xl mx-auto px-6">
+            <!-- Breadcrumb -->
+            <div class="mb-8">
+                <a href="/articles" class="font-mono text-xs text-retro-orange font-bold uppercase hover:underline">&larr; All Articles</a>
+            </div>
+
+            <!-- Header -->
+            <div class="mb-10">
+                <div class="flex gap-2 mb-4">
+                    <span class="font-mono text-[10px] font-bold border-2 border-black px-2 py-0.5 uppercase bg-retro-yellow">Tutorial</span>
+                    <span class="font-mono text-[10px] font-bold border border-black/20 px-2 py-0.5 uppercase text-black/50">3 min read</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.95] mb-4">How to Make Country Music with Suno AI</h1>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-retro-orange border-2 border-black flex items-center justify-center text-white font-black text-sm">TJ</div>
+                    <div>
+                        <span class="font-bold text-sm">TJ Larkin</span>
+                        <span class="font-mono text-[10px] text-black/40 block">Idea to Music</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="article-body">
+                
+<p class="font-mono text-sm leading-relaxed mb-4">My first attempt at AI country music sounded like a parody. Steel guitar drowning everything. Vocals that sounded more like a robot than a honky-tonk. Lyrics that hit every cliché — trucks, dirt roads, cold beer — without any of the heart that makes country music actually work.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">My tenth attempt sounded like it could play on a Nashville playlist. Same tool. Different approach.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Here's what I figured out about making country music with Suno that doesn't sound like a joke.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Prompt That Works</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Start here and adjust: "Modern country, warm male vocals, acoustic and electric guitar, fiddle accents, Nashville production, storytelling, 100-120 BPM."</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Key word: "accents." When you tell Suno "fiddle" without qualification, it cranks the fiddle to 11 and your song sounds like a barn dance. "Fiddle accents" means it appears tastefully, supporting the song rather than dominating it.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">"Nashville production" is another power phrase. It tells Suno you want the polished, radio-ready sound of modern country — not old-timey or bluegrass. If you DO want traditional, swap it for "classic country production" or "honky-tonk."</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Vocal Challenge</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Country vocals are distinctive. The slight twang, the storytelling delivery, the way a country singer bends notes. Suno handles this well if you're specific.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">"Warm male vocals" gives you a solid Luke Combs / Chris Stapleton middle ground. Add "slight twang" if you want more traditional flavor. Add "smooth" if you want more Sam Hunt / Kane Brown pop-country territory. "Weathered male vocals" pushes toward older, more experienced-sounding country — Tyler Childers, Sturgill Simpson.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">For female country: "warm female vocals, country storytelling delivery" produces clean results. Add "powerful" for a Carrie Underwood feel or "intimate" for a Kacey Musgraves vibe.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">Lyrics That Sound Country</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Country thrives on specificity. Not "I drove down a road" but "I took the long way down Route 16." Not "I miss my hometown" but "I miss the way the screen door sounds at mama's house."</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">One technique that works: ground every verse in a single concrete image. A porch. A truck tailgate. A kitchen table. A specific stretch of highway. Country lyrics that start with a vivid, specific image and build an emotional truth from there — that's the genre at its best.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Structure-wise, country loves a narrative arc. Verse 1 sets the scene. Verse 2 complicates it. The chorus carries the emotional thesis. The bridge is where the twist or revelation happens. Think of every country song as a short story with a hook.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">Three Templates</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4"><strong class="font-bold">Modern Radio Country:</strong></p>
+<p class="font-mono text-sm leading-relaxed mb-4">"Modern country, warm male vocals, acoustic and electric guitar, fiddle accents, Nashville production, storytelling, polished, 105 BPM"</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4"><strong class="font-bold">Country Ballad:</strong></p>
+<p class="font-mono text-sm leading-relaxed mb-4">"Country ballad, emotional male vocals, steel guitar, acoustic guitar, gentle fiddle, intimate production, heartfelt and honest, 75 BPM"</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4"><strong class="font-bold">Americana / Roots:</strong></p>
+<p class="font-mono text-sm leading-relaxed mb-4">"Americana, folk-rock, weathered male vocals, acoustic guitar, harmonica, upright bass, dusty and authentic, storytelling, rootsy production, 95 BPM"</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">What to Avoid</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Don't stack every country instrument at once. "Fiddle, steel guitar, banjo, mandolin, dobro, acoustic guitar" produces a wall of competing twang. Pick two or three and let them breathe.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Don't write cliché lyrics unless you're being intentionally fun about it. Suno doesn't know your lyrics are ironic. It'll sing "she's got legs like a dirt road" with total sincerity, and nobody wins.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Don't forget production descriptors. Without them, country songs in Suno can sound thin and dated. "Nashville production" or "modern country production" goes a long way.</p>
+
+<hr class="border-t-2 border-retro-gray my-8">
+
+<p class="font-mono text-sm leading-relaxed mb-4"><em>Country is one of eight genre templates in my Suno Mastery skill files. The full library includes tested prompts, variations, and troubleshooting for every major genre.</em></p>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-12 bg-black text-white border-3 border-black p-8 shadow-retro-lg">
+                <h3 class="font-black text-xl uppercase mb-3">Want to learn the full system?</h3>
+                <p class="font-mono text-sm text-retro-gray mb-6">The complete prompt library, lyric techniques, artist-building framework, and Claude AI skill files.</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="/course" class="bg-retro-yellow text-black border-2 border-retro-yellow px-6 py-3 font-bold uppercase text-sm text-center hover:bg-retro-orange hover:text-white transition-all">View the Course</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="border-2 border-white px-6 py-3 font-bold uppercase text-sm text-center hover:bg-white hover:text-black transition-all">Get a Custom Song</a>
+                </div>
+            </div>
+
+            <!-- Related -->
+            <div class="mt-16">
+                <h3 class="font-black text-xl uppercase tracking-tight mb-6 border-b-3 border-black pb-2">Keep Reading</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    
+            <a href="/articles/suno-prompt-formula" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Tutorial</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">The Suno Prompt Formula That Changed Everything</h4>
+                <span class="font-mono text-[10px] text-black/50">6 min read</span>
+            </a>
+            <a href="/articles/write-lyrics-for-suno" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Tutorial</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">How to Write Song Lyrics That Suno Actually Sings Well</h4>
+                <span class="font-mono text-[10px] text-black/50">7 min read</span>
+            </a>
+            <a href="/articles/suno-style-tags-tested" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Tutorial</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">10 Suno Style Tags That Actually Make a Difference (Tested)</h4>
+                <span class="font-mono text-[10px] text-black/50">5 min read</span>
+            </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t-3 border-black py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 font-mono text-xs font-bold uppercase tracking-wider">
+                    <a href="/#showcase" class="hover:text-retro-orange">Showcase</a>
+                    <a href="/articles" class="hover:text-retro-orange">Articles</a>
+                    <a href="/course" class="hover:text-retro-orange">Course</a>
+                    <a href="/tools" class="hover:text-retro-orange">Tools</a>
+                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-retro-orange">TJ Larkin</a>
+                </div>
+                <span class="font-mono text-xs text-black/50">&copy; 2026 Idea to Music</span>
+            </div>
+        </div>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', () => { if (typeof lucide !== 'undefined') lucide.createIcons(); });</script>
+</body>
+</html>

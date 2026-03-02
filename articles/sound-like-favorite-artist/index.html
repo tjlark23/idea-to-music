@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Make a Song Sound Like Your Favorite Artist in Suno | Idea to Music</title>
+    <meta name="description" content="You know that feeling when a song captures exactly the vibe of your favorite artist — same warmth, same energy, same production feel — but it's something t" />
+    <meta property="og:title" content="How to Make a Song Sound Like Your Favorite Artist in Suno" />
+    <meta property="og:description" content="You know that feeling when a song captures exactly the vibe of your favorite artist — same warmth, same energy, same production feel — but it's something t" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ideatomusic.com/articles/sound-like-favorite-artist" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { black: '#08313a', white: '#f8f9fa', retro: { yellow: '#e9ae4a', orange: '#e76f51', black: '#08313a', white: '#f8f9fa', gray: '#c7d5e0' } },
+            fontFamily: { sans: ['Outfit','system-ui','sans-serif'], mono: ['JetBrains Mono','ui-monospace','monospace'] },
+            boxShadow: { 'retro': '4px 4px 0px 0px #08313a', 'retro-lg': '8px 8px 0px 0px #08313a', 'retro-hover': '2px 2px 0px 0px #08313a' },
+            borderWidth: { '3': '3px' },
+          },
+        },
+      }
+    </script>
+    <style>
+      body { background-color: #f8f9fa; color: #08313a; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+      .bg-grid-pattern { background-size: 40px 40px; background-image: linear-gradient(to right, #c7d5e0 1px, transparent 1px), linear-gradient(to bottom, #c7d5e0 1px, transparent 1px); }
+    </style>
+</head>
+<body class="bg-grid-pattern selection:bg-retro-yellow selection:text-black min-h-screen">
+    <!-- NAV -->
+    <nav class="fixed w-full z-50 bg-white border-b-3 border-black" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
+                    <span class="font-black text-xl tracking-tighter">idea to music</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Showcase</a>
+                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest bg-retro-yellow px-2 py-1 border border-black">Articles</a>
+                    <a href="/course" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Course</a>
+                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Tools</a>
+                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">About</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-retro-orange text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-black shadow-retro hover:bg-retro-yellow hover:text-black transition-all">Get a Custom Song</a>
+                </div>
+                <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+        <div id="mob-menu" class="hidden lg:hidden bg-white border-b-3 border-black w-full absolute">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="/#showcase" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Showcase</a>
+                <a href="/articles" class="block px-4 py-3 font-bold uppercase border-2 border-black bg-retro-yellow">Articles</a>
+                <a href="/course" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Course</a>
+                <a href="/tools" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Tools</a>
+                <a href="/#about" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">About</a>
+                <a href="https://www.songsforyourstory.com/" target="_blank" class="block px-4 py-3 font-bold uppercase bg-retro-orange text-white border-2 border-black shadow-retro text-center">Get a Custom Song</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20">
+        <article class="max-w-3xl mx-auto px-6">
+            <!-- Breadcrumb -->
+            <div class="mb-8">
+                <a href="/articles" class="font-mono text-xs text-retro-orange font-bold uppercase hover:underline">&larr; All Articles</a>
+            </div>
+
+            <!-- Header -->
+            <div class="mb-10">
+                <div class="flex gap-2 mb-4">
+                    <span class="font-mono text-[10px] font-bold border-2 border-black px-2 py-0.5 uppercase bg-retro-yellow">Tutorial</span>
+                    <span class="font-mono text-[10px] font-bold border border-black/20 px-2 py-0.5 uppercase text-black/50">5 min read</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.95] mb-4">How to Make a Song Sound Like Your Favorite Artist in Suno</h1>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-retro-orange border-2 border-black flex items-center justify-center text-white font-black text-sm">TJ</div>
+                    <div>
+                        <span class="font-bold text-sm">TJ Larkin</span>
+                        <span class="font-mono text-[10px] text-black/40 block">Idea to Music</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="article-body">
+                
+<p class="font-mono text-sm leading-relaxed mb-4">You know that feeling when a song captures exactly the vibe of your favorite artist — same warmth, same energy, same production feel — but it's something totally new?</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">That's what good AI music production feels like. Not copying an artist. Capturing their essence and channeling it into something original.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Here's the research framework I use to deconstruct any artist's sound and rebuild it as a Suno prompt.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Five-Category Breakdown</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Every artist's sound can be described through five categories. You don't need musical training to analyze these — you just need to pay attention.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4"><strong class="font-bold">Vocals:</strong> What does the voice sound like? Warm or bright? Smooth or raspy? Powerful or gentle? Do they use falsetto? Is the delivery conversational or theatrical? Do they belt in choruses or stay controlled?</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4"><strong class="font-bold">Instrumentation:</strong> What instruments do you hear most prominently? Acoustic guitar? Electric guitar? Piano? Synths? What's in the background — strings, percussion, bass? What's absent?</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4"><strong class="font-bold">Production:</strong> Does the recording sound polished or raw? Modern or vintage? Dense and layered or spacious and minimal? Close-miked and intimate or wide and atmospheric?</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4"><strong class="font-bold">Energy/Tempo:</strong> Is the typical tempo fast or slow? Does the energy stay consistent or build dramatically? Are verses quiet with loud choruses, or is it all one level?</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4"><strong class="font-bold">Mood:</strong> What's the dominant emotional quality? Hopeful? Melancholy? Confident? Vulnerable? Playful? Intense?</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">How to Research Without Musical Knowledge</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">You don't need to identify these categories by listening. You can research them.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Search for "[Artist name] music review" and read how professional critics describe the sound. They'll use exactly the kind of descriptive language Suno responds to — "intimate," "lush," "stripped-back," "driving," "atmospheric."</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Search for "[Artist name] sounds like" and look at fan comparisons. "She sounds like Adele meets Florence and the Machine" tells you about vocal power and orchestral production.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Search for "[Artist name] producer interview" and read about recording decisions. Producers describe gear, room sound, mic placement, and mixing approach in plain language that translates directly to Suno descriptors.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Search Reddit or music forums for "[Artist name] style." Fans describe music in emotional, accessible terms that are often more useful than technical reviews.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">I feed all of this into Claude and ask it to synthesize the research into specific descriptors for each of the five categories. Claude pulls together the reviews, comparisons, and fan descriptions into a structured Sound DNA profile.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">Turning Research into a Prompt</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Once you have descriptors for all five categories, the prompt writes itself.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Example: I researched an artist whose reviews described "warm, inviting vocals with a conversational delivery," "acoustic guitar as the foundation with subtle piano," "modern but not over-produced, intimate studio feel," "tempos range from 80-120 BPM with most songs in the mid-range," and "hopeful, optimistic, finding beauty in ordinary moments."</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">That translates to: "Indie folk singer-songwriter, warm male vocals, conversational delivery, acoustic guitar driven, gentle piano accents, modern production, intimate recording, spacious mix, uplifting and hopeful, 100-110 BPM."</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Every phrase in the prompt maps directly to something from the research. No guessing. No hoping Suno figures it out.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Blend Technique</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Here's where it gets powerful: you don't recreate one artist. You blend two or three.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Take the vocals from Artist A, the instrumentation from Artist B, and the production style from Artist C. The result is something that feels familiar but can't be pinpointed as any single artist.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">This is exactly how real artists develop their sound. Nobody creates in a vacuum. Every musician is a blend of their influences. You're just doing it deliberately.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">My singer-songwriter artist blends Jake Scott's vocal warmth, Ben Rector's emotional earnestness, and Matt Kearney's rhythmic sensibility. If you listen closely, you can hear echoes of all three — but the combination is its own thing.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">Common Mistakes</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Naming the artist directly in the prompt. "In the style of Taylor Swift" sometimes works, but it's a blunt instrument. Suno interprets it unpredictably. You get better, more consistent results from describing the specific qualities you want rather than name-dropping.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Trying to replicate a specific song rather than a style. Suno can't reproduce a particular recording. It can capture a vibe, a vocal quality, a production approach. Aim for "sounds like it could be on the same album" rather than "sounds like that exact song."</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Ignoring what the artist is NOT. Part of an artist's identity is what they don't do. If the artist never uses heavy drums, don't include drums in your prompt. If they never use electronic elements, leave those out. Absence defines a sound as much as presence.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Not testing and iterating. Your first prompt based on research is a hypothesis. Generate 3-5 test songs and listen critically. Does the vocal match? Is the instrumentation right? Is the production feel accurate? Adjust one element at a time until it clicks.</p>
+
+<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Full Framework</h2>
+
+<p class="font-mono text-sm leading-relaxed mb-4">This research process — five categories, systematic research, blend technique, iterative testing — is the core of the Artist Engine skill I built. It works for any genre and any combination of influences. The skill file walks Claude through the entire process, producing a complete artist profile with tested Suno prompt templates.</p>
+
+<p class="font-mono text-sm leading-relaxed mb-4">Once you've built one artist this way, building the second takes half the time. By the third, you can do it in under an hour. You're not starting from scratch each time — you're applying a proven framework to new inputs.</p>
+
+<hr class="border-t-2 border-retro-gray my-8">
+
+<p class="font-mono text-sm leading-relaxed mb-4"><em>The Artist Engine framework, including the Claude AI skill file that automates the research and prompt-building process, is part of the Suno Mastery course. Build one artist for free using the techniques above. Build a complete production system with the course.</em></p>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-12 bg-black text-white border-3 border-black p-8 shadow-retro-lg">
+                <h3 class="font-black text-xl uppercase mb-3">Want to learn the full system?</h3>
+                <p class="font-mono text-sm text-retro-gray mb-6">The complete prompt library, lyric techniques, artist-building framework, and Claude AI skill files.</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="/course" class="bg-retro-yellow text-black border-2 border-retro-yellow px-6 py-3 font-bold uppercase text-sm text-center hover:bg-retro-orange hover:text-white transition-all">View the Course</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="border-2 border-white px-6 py-3 font-bold uppercase text-sm text-center hover:bg-white hover:text-black transition-all">Get a Custom Song</a>
+                </div>
+            </div>
+
+            <!-- Related -->
+            <div class="mt-16">
+                <h3 class="font-black text-xl uppercase tracking-tight mb-6 border-b-3 border-black pb-2">Keep Reading</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    
+            <a href="/articles/suno-prompt-formula" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Tutorial</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">The Suno Prompt Formula That Changed Everything</h4>
+                <span class="font-mono text-[10px] text-black/50">6 min read</span>
+            </a>
+            <a href="/articles/write-lyrics-for-suno" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Tutorial</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">How to Write Song Lyrics That Suno Actually Sings Well</h4>
+                <span class="font-mono text-[10px] text-black/50">7 min read</span>
+            </a>
+            <a href="/articles/suno-style-tags-tested" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
+                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Tutorial</span>
+                <h4 class="font-black text-sm uppercase mt-2 mb-1">10 Suno Style Tags That Actually Make a Difference (Tested)</h4>
+                <span class="font-mono text-[10px] text-black/50">5 min read</span>
+            </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t-3 border-black py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 font-mono text-xs font-bold uppercase tracking-wider">
+                    <a href="/#showcase" class="hover:text-retro-orange">Showcase</a>
+                    <a href="/articles" class="hover:text-retro-orange">Articles</a>
+                    <a href="/course" class="hover:text-retro-orange">Course</a>
+                    <a href="/tools" class="hover:text-retro-orange">Tools</a>
+                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-retro-orange">TJ Larkin</a>
+                </div>
+                <span class="font-mono text-xs text-black/50">&copy; 2026 Idea to Music</span>
+            </div>
+        </div>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', () => { if (typeof lucide !== 'undefined') lucide.createIcons(); });</script>
+</body>
+</html>
