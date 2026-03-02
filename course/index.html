@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suno Mastery Course - Make Professional AI Music | Idea to Music</title>
+    <meta name="description" content="The complete system for producing professional AI music with Suno. 12 video lessons, 4 Claude AI skill files, tested prompt libraries, and artist-building frameworks. Created by TJ Larkin at Idea to Music." />
+    <link rel="canonical" href="https://ideatomusic.com/course" />
+    <meta property="og:title" content="Suno Mastery - The Complete AI Music Production System" />
+    <meta property="og:description" content="Stop generating random AI songs. Start producing music that sounds like a real artist made it. 12 lessons + 4 Claude AI plugins. By TJ Larkin." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ideatomusic.com/course" />
+    <meta property="og:site_name" content="Idea to Music" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Suno Mastery - Make Professional AI Music" />
+    <meta name="twitter:description" content="12 video lessons + 4 Claude AI skill files. The complete system for producing professional AI music with Suno." />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Suno Mastery Course","description":"The complete system for producing professional-quality AI music with Suno. Includes 12 video lessons, 4 Claude AI skill files, tested prompt libraries, artist profile templates, and a lyric quality checker tool.","brand":{"@type":"Organization","name":"Idea to Music","url":"https://ideatomusic.com"},"offers":{"@type":"Offer","price":"299","priceCurrency":"USD","availability":"https://schema.org/InStock","seller":{"@type":"Person","name":"TJ Larkin"}},"creator":{"@type":"Person","name":"TJ Larkin","url":"https://tjlarkin.com","jobTitle":"AI Music Producer & Educator"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Course","name":"Suno Mastery: How to Sound Like a Producer","description":"Learn to produce professional AI music using Suno. Covers prompt engineering, artist development, lyric optimization, genre mastery, and iteration techniques.","provider":{"@type":"Organization","name":"Idea to Music","url":"https://ideatomusic.com"},"instructor":{"@type":"Person","name":"TJ Larkin"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT3H"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Suno Mastery course?","acceptedAnswer":{"@type":"Answer","text":"Suno Mastery is a complete system for producing professional-quality AI music with Suno. It includes 12 video lessons, 4 Claude AI skill files that turn Claude into your music production assistant, tested prompt libraries for 8+ genres, artist profile templates, and a lyric quality checker. Created by TJ Larkin at Idea to Music."}},{"@type":"Question","name":"Do I need music experience to take this course?","acceptedAnswer":{"@type":"Answer","text":"No. TJ Larkin built this system specifically because he has zero formal music training. You do not need to read music, play an instrument, or have any prior production experience. If you can describe music you like in plain language, you can produce professional AI music with this system."}},{"@type":"Question","name":"What are the Claude AI skill files?","acceptedAnswer":{"@type":"Answer","text":"The 4 skill files are plugins you drop into a Claude AI Project. They turn Claude into a dedicated music production assistant that knows the entire Suno Mastery system. The Artist Engine builds artist profiles, the Lyric Writer creates Suno-optimized lyrics, the Genre Templates provide tested prompts, and Songs For Your Story handles custom song production."}},{"@type":"Question","name":"How much does the Suno Mastery course cost?","acceptedAnswer":{"@type":"Answer","text":"The full course is normally $999. Currently available for $299 for early buyers. This includes all 12 video lessons, 4 Claude AI skill files, artist profile templates, the lyric checker tool, and all future updates."}},{"@type":"Question","name":"What do I need besides this course?","acceptedAnswer":{"@type":"Answer","text":"A Suno account (free tier works but Pro at $10/month is recommended) and a Claude AI account (free tier works, Pro recommended). That is it. No other software, hardware, or tools required."}},{"@type":"Question","name":"Who created the Suno Mastery course?","acceptedAnswer":{"@type":"Answer","text":"TJ Larkin, an AI music producer who has created over 200 songs across 5 AI artist profiles spanning multiple genres. TJ also runs Idea to Music and a local media company with 22+ newsletters and 145K+ subscribers. He built this system through hands-on experimentation, not music theory."}}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"TJ Larkin","jobTitle":"AI Music Producer & Educator","url":"https://tjlarkin.com","worksFor":{"@type":"Organization","name":"Idea to Music","url":"https://ideatomusic.com"},"knowsAbout":["AI Music Production","Suno AI","Prompt Engineering for Music","Claude AI Skills"],"sameAs":["https://tjlarkin.com"]}
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { black: '#08313a', white: '#f8f9fa', retro: { yellow: '#e9ae4a', orange: '#e76f51', black: '#08313a', white: '#f8f9fa', gray: '#c7d5e0' } },
+            fontFamily: { sans: ['Outfit','system-ui','sans-serif'], mono: ['JetBrains Mono','ui-monospace','monospace'] },
+            boxShadow: { 'retro': '4px 4px 0px 0px #08313a', 'retro-lg': '8px 8px 0px 0px #08313a' },
+            borderWidth: { '3': '3px' },
+          },
+        },
+      }
+    </script>
+    <style>
+      body { background-color: #f8f9fa; color: #08313a; font-family: 'Outfit', sans-serif; }
+      .line-through-red { text-decoration: line-through; text-decoration-color: #e76f51; text-decoration-thickness: 3px; }
+    </style>
+</head>
+<body class="selection:bg-[#e9ae4a] selection:text-[#08313a] min-h-screen">
+    <nav class="fixed w-full z-50 bg-[#f8f9fa] border-b-[3px] border-[#08313a] transition-transform duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
+                    <span class="font-black text-xl tracking-tighter">idea to music</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Showcase</a>
+                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Articles</a>
+                    <a href="/course" class="font-bold text-sm uppercase tracking-widest bg-[#e9ae4a] px-2 py-1 border border-[#08313a]">Course</a>
+                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Tools</a>
+                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">About</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-[#e76f51] text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-[#08313a] shadow-retro hover:bg-[#e9ae4a] hover:text-[#08313a] transition-all">Get a Custom Song</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#f8f9fa] border-b-[3px] border-[#08313a] w-full absolute">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="/#showcase" class="mobile-link block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a]">Showcase</a>
+                <a href="/articles" class="mobile-link block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a]">Articles</a>
+                <a href="/course" class="mobile-link block px-4 py-3 font-bold uppercase border-2 border-[#08313a] bg-[#e9ae4a]">Course</a>
+                <a href="/tools" class="mobile-link block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a]">Tools</a>
+                <a href="/#about" class="mobile-link block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a]">About</a>
+                <a href="https://www.songsforyourstory.com/" target="_blank" class="block px-4 py-3 font-bold uppercase bg-[#e76f51] text-white border-2 border-[#08313a] shadow-retro text-center">Get a Custom Song</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="pt-28 pb-16 md:pt-36 md:pb-20 bg-white border-b-[3px] border-[#08313a]" aria-label="Course Hero">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <div class="inline-block bg-[#e76f51] text-white px-4 py-1 font-mono text-xs font-bold uppercase tracking-widest border-2 border-[#08313a] mb-6">Now Live</div>
+                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.95] mb-6">Suno Mastery</h1>
+                    <p class="text-lg sm:text-xl text-[#08313a]/70 max-w-2xl mx-auto leading-relaxed">The complete system for producing professional AI music. Stop generating random songs. Start producing music that sounds like a real artist made it.</p>
+                </div>
+                <div class="max-w-md mx-auto bg-[#08313a] border-[3px] border-[#08313a] p-8 text-center shadow-retro-lg mb-10">
+                    <div class="mb-3"><span class="text-3xl font-black text-white/40 line-through-red">$999</span></div>
+                    <div class="mb-1"><span class="text-6xl font-black text-[#e9ae4a]">$299</span></div>
+                    <p class="text-xs text-[#c7d5e0] font-mono uppercase tracking-widest mb-6">Launch price - next 7 buyers only</p>
+                    <a href="#buy" class="block bg-[#e9ae4a] text-[#08313a] border-[3px] border-[#e9ae4a] px-8 py-4 font-black uppercase tracking-widest text-lg hover:bg-[#e76f51] hover:text-white hover:border-[#e76f51] transition-all">Get Instant Access</a>
+                    <p class="text-[10px] text-[#c7d5e0]/60 mt-3 font-mono">12 video lessons + 4 Claude AI plugins + templates + tools</p>
+                </div>
+                <p class="text-center text-sm text-[#08313a]/50 max-w-lg mx-auto">Built by someone who can't read sheet music but has produced 200+ songs that people mistake for real artists.</p>
+            </div>
+        </section>
+
+        <!-- THE PROBLEM -->
+        <section class="py-16 bg-[#f8f9fa] border-b-[3px] border-[#08313a]" aria-label="The Problem">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8">
+                <div class="bg-[#08313a] text-[#e9ae4a] inline-block px-3 py-1 font-mono text-xs font-bold uppercase tracking-widest mb-6">The Problem</div>
+                <h2 class="text-2xl sm:text-4xl font-black uppercase tracking-tighter mb-8">Your Suno Songs All Sound the Same</h2>
+                <div class="space-y-5 text-base leading-relaxed text-[#08313a]/80">
+                    <p>Your first Suno song blew your mind. Your tenth sounded exactly like your first. By your twentieth, you realized every song has the same vaguely pleasant, vaguely generic quality.</p>
+                    <p>That is because you are <strong class="text-[#08313a]">generating</strong> songs. You should be <strong class="text-[#08313a]">producing</strong> music.</p>
+                    <p>The difference? Generating is typing "upbeat pop song about summer" and hitting create. Producing is knowing that "warm male vocals, acoustic guitar driven, indie folk singer-songwriter, fingerpicked nylon string, intimate recording, 108 BPM" produces a completely different result.</p>
+                    <p>Most people treat Suno like a slot machine. Pull the lever, see what comes out. This course teaches you to treat it like a recording studio. You are the producer. You make the decisions. The AI is the session musician.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT YOU GET -->
+        <section class="py-16 bg-white border-b-[3px] border-[#08313a]" aria-label="What You Get">
+            <div class="max-w-5xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <div class="bg-[#e9ae4a] text-[#08313a] inline-block px-3 py-1 font-mono text-xs font-bold uppercase tracking-widest mb-4">What's Inside</div>
+                    <h2 class="text-2xl sm:text-4xl font-black uppercase tracking-tighter">Everything You Need to Sound Like a Producer</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="bg-white border-[3px] border-[#08313a] p-6 shadow-retro">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center flex-shrink-0"><i data-lucide="video" class="w-5 h-5"></i></div>
+                            <h3 class="font-black text-lg uppercase tracking-tight">12 Video Lessons</h3>
+                        </div>
+                        <p class="text-sm text-[#08313a]/70 leading-relaxed">Screen recordings of the entire process. Watch me build an artist from scratch, write lyrics, generate songs, and iterate until the output is professional. Not theory. Real production sessions.</p>
+                        <p class="text-xs font-mono text-[#08313a]/40 mt-3 uppercase">~3 hours total runtime</p>
+                    </div>
+                    <div class="bg-white border-[3px] border-[#08313a] p-6 shadow-retro">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-[#e76f51] border-2 border-[#08313a] flex items-center justify-center flex-shrink-0 text-white"><i data-lucide="cpu" class="w-5 h-5"></i></div>
+                            <h3 class="font-black text-lg uppercase tracking-tight">4 Claude AI Plugins</h3>
+                        </div>
+                        <p class="text-sm text-[#08313a]/70 leading-relaxed">Drop these into a Claude Project and you have a dedicated AI music producer. The Artist Engine builds artists. The Lyric Writer writes Suno-optimized lyrics. The Genre Templates give you tested prompts. Songs For Your Story handles custom orders.</p>
+                        <p class="text-xs font-mono text-[#e76f51] mt-3 uppercase font-bold">This alone is worth the price of the course</p>
+                    </div>
+                    <div class="bg-white border-[3px] border-[#08313a] p-6 shadow-retro">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-[#08313a] border-2 border-[#08313a] flex items-center justify-center flex-shrink-0 text-[#e9ae4a]"><i data-lucide="file-text" class="w-5 h-5"></i></div>
+                            <h3 class="font-black text-lg uppercase tracking-tight">Tested Prompt Library</h3>
+                        </div>
+                        <p class="text-sm text-[#08313a]/70 leading-relaxed">Pre-built prompts for 8+ genres that actually work. Singer-songwriter, pop-rock, country, R&B, kids music, lo-fi hip-hop, electronic, and more. Each tested with A/B comparisons so you know exactly what each word does.</p>
+                        <p class="text-xs font-mono text-[#08313a]/40 mt-3 uppercase">Copy, paste, produce</p>
+                    </div>
+                    <div class="bg-white border-[3px] border-[#08313a] p-6 shadow-retro">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-[#c7d5e0] border-2 border-[#08313a] flex items-center justify-center flex-shrink-0"><i data-lucide="wrench" class="w-5 h-5"></i></div>
+                            <h3 class="font-black text-lg uppercase tracking-tight">Templates + Tools</h3>
+                        </div>
+                        <p class="text-sm text-[#08313a]/70 leading-relaxed">Artist Profile Template, Sound DNA Worksheet, Song Brief Template for custom orders, and the Lyric Checker tool that scores your lyrics for Suno optimization before you waste credits on bad output.</p>
+                        <p class="text-xs font-mono text-[#08313a]/40 mt-3 uppercase">Plus all future updates included</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSE OUTLINE -->
+        <section class="py-16 bg-[#f8f9fa] border-b-[3px] border-[#08313a]" aria-label="Course Modules">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <div class="bg-[#08313a] text-white inline-block px-3 py-1 font-mono text-xs font-bold uppercase tracking-widest mb-4">The System</div>
+                    <h2 class="text-2xl sm:text-4xl font-black uppercase tracking-tighter">12 Lessons. 5 Modules. One System.</h2>
+                </div>
+                <div class="mb-8">
+                    <div class="bg-[#e9ae4a] border-[3px] border-[#08313a] px-5 py-3 font-black uppercase tracking-wider text-sm">Module 1: The System</div>
+                    <div class="border-x-[3px] border-b-[3px] border-[#08313a] bg-white">
+                        <div class="p-5"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">01</span><span class="font-bold">Why Your Suno Songs Sound Like AI</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">The difference between generating and producing. Why 80% of quality comes from the prompt.</p></div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <div class="bg-[#e9ae4a] border-[3px] border-[#08313a] px-5 py-3 font-black uppercase tracking-wider text-sm">Module 2: Building Your First Artist</div>
+                    <div class="border-x-[3px] border-b-[3px] border-[#08313a] bg-white">
+                        <div class="p-5 border-b border-[#08313a]/10"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">02</span><span class="font-bold">Picking Your Sound (Reference Artist Research)</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">How to pick 2-5 reference artists that blend well. No music theory required.</p></div>
+                        <div class="p-5 border-b border-[#08313a]/10"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">03</span><span class="font-bold">The Sound DNA Extraction</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">Distilling research into vocals, instrumentation, production, structure. Building a complete Sound DNA profile.</p></div>
+                        <div class="p-5"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">04</span><span class="font-bold">Creating the Artist Identity</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">Naming, backstory, sonic identity statement. Saving everything in Claude for ongoing use.</p></div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <div class="bg-[#e9ae4a] border-[3px] border-[#08313a] px-5 py-3 font-black uppercase tracking-wider text-sm">Module 3: The Prompt System</div>
+                    <div class="border-x-[3px] border-b-[3px] border-[#08313a] bg-white">
+                        <div class="p-5 border-b border-[#08313a]/10"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">05</span><span class="font-bold">Suno Style Prompts: What Actually Works</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">The six-part formula. Same lyrics, five different prompts, radically different results.</p></div>
+                        <div class="p-5"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">06</span><span class="font-bold">Genre Deep Dives</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">Walk through 5+ genre templates. What each produces, variations to try, common problems to fix.</p></div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <div class="bg-[#e9ae4a] border-[3px] border-[#08313a] px-5 py-3 font-black uppercase tracking-wider text-sm">Module 4: Writing Lyrics That Suno Actually Sings Well</div>
+                    <div class="border-x-[3px] border-b-[3px] border-[#08313a] bg-white">
+                        <div class="p-5 border-b border-[#08313a]/10"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">07</span><span class="font-bold">Lyrics for AI (Not Lyrics for Humans)</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">Syllable consistency, rhyme patterns, open vowel endings. Why great poetry makes terrible Suno lyrics.</p></div>
+                        <div class="p-5"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">08</span><span class="font-bold">Custom Songs: Names, Stories, and Personal Details</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">How to include real names without butchered pronunciation. Turning personal moments into music.</p></div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <div class="bg-[#e9ae4a] border-[3px] border-[#08313a] px-5 py-3 font-black uppercase tracking-wider text-sm">Module 5: The Iteration Game</div>
+                    <div class="border-x-[3px] border-b-[3px] border-[#08313a] bg-white">
+                        <div class="p-5 border-b border-[#08313a]/10"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">09</span><span class="font-bold">From Good to Great (The Curation Process)</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">Why great songs take 3-8 generations. The iteration cycle. Changing one variable at a time.</p></div>
+                        <div class="p-5"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">10</span><span class="font-bold">Building Your Library</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">Multiple templates per artist. Expanding to multiple artists. The ongoing workflow: brief to done in minutes.</p></div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <div class="bg-[#e76f51] text-white border-[3px] border-[#08313a] px-5 py-3 font-black uppercase tracking-wider text-sm">Bonus: Making Money With AI Music</div>
+                    <div class="border-x-[3px] border-b-[3px] border-[#08313a] bg-white">
+                        <div class="p-5 border-b border-[#08313a]/10"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">11</span><span class="font-bold">Turning This Into Revenue</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">Custom songs as a service. Music for content creators. Teaching others. Pricing and delivery.</p></div>
+                        <div class="p-5"><div class="flex items-center gap-3"><span class="font-mono text-xs text-[#08313a]/40">12</span><span class="font-bold">What's Coming Next</span></div><p class="text-xs text-[#08313a]/50 ml-8 mt-1">How Suno is evolving. Skill file updates. Community access.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE PLUGINS -->
+        <section class="py-16 bg-white border-b-[3px] border-[#08313a]" aria-label="Claude AI Plugins">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <div class="bg-[#e76f51] text-white inline-block px-3 py-1 font-mono text-xs font-bold uppercase tracking-widest mb-4">The Secret Weapon</div>
+                    <h2 class="text-2xl sm:text-4xl font-black uppercase tracking-tighter mb-4">4 Claude AI Plugins That Do the Work For You</h2>
+                    <p class="text-sm text-[#08313a]/60 max-w-xl mx-auto">Drop these into a Claude Project. Now you have a dedicated AI music producer that knows the entire system. Ask it to build artists, write lyrics, pick prompts, and troubleshoot output.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-[#f8f9fa] border-[3px] border-[#08313a] p-5 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center flex-shrink-0 font-mono font-bold text-sm">01</div>
+                        <div><h3 class="font-black uppercase tracking-tight">Artist Engine</h3><p class="text-sm text-[#08313a]/70 mt-1">Tell Claude "I want an artist that sounds like a blend of Taylor Swift's storytelling and Hozier's atmosphere" and it walks you through the complete 5-stage artist creation pipeline. Sound DNA, prompt templates, identity, everything.</p></div>
+                    </div>
+                    <div class="bg-[#f8f9fa] border-[3px] border-[#08313a] p-5 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center flex-shrink-0 font-mono font-bold text-sm">02</div>
+                        <div><h3 class="font-black uppercase tracking-tight">Lyric Writer</h3><p class="text-sm text-[#08313a]/70 mt-1">Say "write a song about my daughter learning to ride a bike, warm acoustic, male vocals" and get back Suno-ready lyrics with perfect syllable counts, rhyme patterns, structure tags, and open vowel endings.</p></div>
+                    </div>
+                    <div class="bg-[#f8f9fa] border-[3px] border-[#08313a] p-5 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center flex-shrink-0 font-mono font-bold text-sm">03</div>
+                        <div><h3 class="font-black uppercase tracking-tight">Genre Templates</h3><p class="text-sm text-[#08313a]/70 mt-1">Tested prompts for 8+ genres. Ask "what prompt should I use for a country ballad?" and get the exact text to paste into Suno, plus variations and troubleshooting tips.</p></div>
+                    </div>
+                    <div class="bg-[#f8f9fa] border-[3px] border-[#08313a] p-5 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-[#e76f51] border-2 border-[#08313a] flex items-center justify-center flex-shrink-0 font-mono font-bold text-sm text-white">04</div>
+                        <div><h3 class="font-black uppercase tracking-tight">Songs For Your Story</h3><p class="text-sm text-[#08313a]/70 mt-1">The custom song production skill. Feed it a client brief and it handles everything: parsing personal details, choosing the right template, writing personalized lyrics, and generating the Suno prompt. Production in minutes, not hours.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHO THIS IS FOR -->
+        <section class="py-16 bg-[#08313a] text-white border-b-[3px] border-[#e9ae4a]" aria-label="Who This Is For">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-4xl font-black uppercase tracking-tighter mb-10 text-center">This Course Is For You If...</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-3"><div class="w-6 h-6 bg-[#e9ae4a] flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-3 h-3 text-[#08313a]"></i></div><p class="text-sm text-[#c7d5e0]">You have tried Suno and got mediocre results that all sound the same</p></div>
+                    <div class="flex items-start gap-3"><div class="w-6 h-6 bg-[#e9ae4a] flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-3 h-3 text-[#08313a]"></i></div><p class="text-sm text-[#c7d5e0]">You want to make personal songs for birthdays, weddings, or special moments</p></div>
+                    <div class="flex items-start gap-3"><div class="w-6 h-6 bg-[#e9ae4a] flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-3 h-3 text-[#08313a]"></i></div><p class="text-sm text-[#c7d5e0]">You have zero musical training but want professional-sounding output</p></div>
+                    <div class="flex items-start gap-3"><div class="w-6 h-6 bg-[#e9ae4a] flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-3 h-3 text-[#08313a]"></i></div><p class="text-sm text-[#c7d5e0]">You want to build a custom song business as a side hustle</p></div>
+                    <div class="flex items-start gap-3"><div class="w-6 h-6 bg-[#e9ae4a] flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-3 h-3 text-[#08313a]"></i></div><p class="text-sm text-[#c7d5e0]">You are a content creator who wants original music for videos, podcasts, or brand content</p></div>
+                    <div class="flex items-start gap-3"><div class="w-6 h-6 bg-[#e9ae4a] flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-3 h-3 text-[#08313a]"></i></div><p class="text-sm text-[#c7d5e0]">You love AI tools and want to push what is possible with music generation</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT TJ -->
+        <section class="py-16 bg-white border-b-[3px] border-[#08313a]" aria-label="About TJ Larkin">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8">
+                <div class="flex flex-col sm:flex-row items-start gap-8">
+                    <div class="w-20 h-20 bg-[#e76f51] border-[3px] border-[#08313a] flex items-center justify-center text-white font-black text-3xl flex-shrink-0 shadow-retro">TJ</div>
+                    <div>
+                        <h2 class="text-2xl font-black uppercase tracking-tighter mb-4">Built by TJ Larkin</h2>
+                        <div class="space-y-3 text-sm text-[#08313a]/80 leading-relaxed">
+                            <p>I can not read sheet music. I do not play any instruments. I failed piano in 5th grade.</p>
+                            <p>In the last three months, I have produced over 200 AI-generated songs across five different artist profiles. People regularly ask me which streaming service they can find them on. They can not. None of these artists exist. I built them.</p>
+                            <p>This course is the exact system I use. Not the theory. The actual process, prompts, templates, and Claude AI plugins that produce professional output every single time.</p>
+                            <p>I also run a local media company with 22+ newsletters and 145,000+ subscribers. I know how to build systems that produce consistent results at scale. That is exactly what this course teaches you to do with music.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16 bg-[#f8f9fa] border-b-[3px] border-[#08313a]" aria-label="Frequently Asked Questions">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tighter mb-8 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-3">
+                    <details class="group border-[3px] border-[#08313a] hover:border-[#e9ae4a] transition-colors bg-white">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer font-bold text-sm sm:text-base"><span>Do I need any music experience?</span><svg class="w-4 h-4 flex-shrink-0 ml-3 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <div class="px-5 pb-5 text-sm leading-relaxed text-[#08313a]/75">No. I built this system specifically because I have zero formal music training. You do not need to read music, play an instrument, or have any prior production experience. If you can describe music you like in plain language, you can produce professional AI music with this system.</div>
+                    </details>
+                    <details class="group border-[3px] border-[#08313a] hover:border-[#e9ae4a] transition-colors bg-white">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer font-bold text-sm sm:text-base"><span>What are the Claude AI skill files?</span><svg class="w-4 h-4 flex-shrink-0 ml-3 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <div class="px-5 pb-5 text-sm leading-relaxed text-[#08313a]/75">They are plugins you drop into a Claude AI Project. They turn Claude into a dedicated music production assistant that knows the entire Suno Mastery system. The Artist Engine builds artist profiles, the Lyric Writer creates Suno-optimized lyrics, the Genre Templates provide tested prompts, and Songs For Your Story handles custom song production.</div>
+                    </details>
+                    <details class="group border-[3px] border-[#08313a] hover:border-[#e9ae4a] transition-colors bg-white">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer font-bold text-sm sm:text-base"><span>What do I need besides this course?</span><svg class="w-4 h-4 flex-shrink-0 ml-3 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <div class="px-5 pb-5 text-sm leading-relaxed text-[#08313a]/75">A Suno account (free tier works, Pro at $10/month recommended) and a Claude AI account (free tier works, Pro recommended). That is it. No other software, hardware, or tools required.</div>
+                    </details>
+                    <details class="group border-[3px] border-[#08313a] hover:border-[#e9ae4a] transition-colors bg-white">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer font-bold text-sm sm:text-base"><span>Can I really make money with this?</span><svg class="w-4 h-4 flex-shrink-0 ml-3 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <div class="px-5 pb-5 text-sm leading-relaxed text-[#08313a]/75">I run a custom song service (Songs For Your Story) that charges $49+ per song. The bonus module covers exactly how to set up and price a custom song business. Content creators also use this for original YouTube intros, podcast themes, and brand music. The course pays for itself with a handful of custom song orders.</div>
+                    </details>
+                    <details class="group border-[3px] border-[#08313a] hover:border-[#e9ae4a] transition-colors bg-white">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer font-bold text-sm sm:text-base"><span>How quickly will I see results?</span><svg class="w-4 h-4 flex-shrink-0 ml-3 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <div class="px-5 pb-5 text-sm leading-relaxed text-[#08313a]/75">You can produce noticeably better music within your first hour using the prompt formula. Building a complete artist profile takes about two hours. After a week of practice with the system, most people are producing songs that impress listeners. The Claude AI plugins make the whole process even faster.</div>
+                    </details>
+                    <details class="group border-[3px] border-[#08313a] hover:border-[#e9ae4a] transition-colors bg-white">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer font-bold text-sm sm:text-base"><span>Is AI music legal to use commercially?</span><svg class="w-4 h-4 flex-shrink-0 ml-3 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <div class="px-5 pb-5 text-sm leading-relaxed text-[#08313a]/75">Suno's paid plans grant commercial rights to the music you generate. You can use AI-generated songs for business purposes, content creation, and commercial projects. The course covers licensing considerations in the bonus module.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="py-20 bg-[#08313a] text-white" aria-label="Buy Now" id="buy">
+            <div class="max-w-xl mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tighter mb-6">Stop Generating.<br/><span class="text-[#e9ae4a]">Start Producing.</span></h2>
+                <p class="text-sm text-[#c7d5e0] mb-10 max-w-md mx-auto">12 video lessons. 4 Claude AI plugins. Tested prompt libraries. Artist templates. Lyric checker tool. All future updates included.</p>
+                <div class="bg-white/5 border-[3px] border-[#e9ae4a] p-8 mb-8">
+                    <div class="mb-2"><span class="text-2xl font-black text-white/40 line-through-red">$999</span></div>
+                    <div class="mb-1"><span class="text-5xl sm:text-6xl font-black text-[#e9ae4a]">$299</span></div>
+                    <p class="text-xs text-[#c7d5e0]/60 font-mono uppercase tracking-widest mb-6">Launch price - next 7 buyers only</p>
+                    <a href="REPLACE_WITH_PAYMENT_LINK" class="block bg-[#e9ae4a] text-[#08313a] border-[3px] border-[#e9ae4a] px-8 py-4 font-black uppercase tracking-widest text-lg hover:bg-[#e76f51] hover:text-white hover:border-[#e76f51] transition-all">Get Instant Access - $299</a>
+                </div>
+                <p class="text-xs text-[#c7d5e0]/40">After the launch price ends, this goes to $999. No discounts, no exceptions.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#f8f9fa] border-t-[3px] border-[#08313a] py-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs font-bold uppercase tracking-wider">
+                    <a href="/#showcase" class="hover:text-[#e76f51]">Showcase</a>
+                    <a href="/articles" class="hover:text-[#e76f51]">Articles</a>
+                    <a href="/course" class="hover:text-[#e76f51]">Course</a>
+                    <a href="/tools" class="hover:text-[#e76f51]">Tools</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="hover:text-[#e76f51]">Custom Songs</a>
+                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-[#e76f51]">TJ Larkin</a>
+                </div>
+                <span class="text-xs text-[#08313a]/50">&copy; 2026 Idea to Music</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-link').forEach(function(link) {
+        link.addEventListener('click', function() { document.getElementById('mobile-menu').classList.add('hidden'); });
+    });
+    var lastScrollY = 0;
+    window.addEventListener('scroll', function() {
+        var nav = document.getElementById('navbar');
+        if (window.scrollY > lastScrollY && window.scrollY > 100) nav.style.transform = 'translateY(-100%)';
+        else nav.style.transform = 'translateY(0)';
+        lastScrollY = window.scrollY;
+    });
+    document.addEventListener('DOMContentLoaded', function() { if (typeof lucide !== 'undefined') lucide.createIcons(); });
+    </script>
+</body>
+</html>
