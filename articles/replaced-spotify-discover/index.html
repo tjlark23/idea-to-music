@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I Replaced My Spotify Discover Weekly with Songs I Made Myself | Idea to Music</title>
     <meta name="description" content="Every Monday, Spotify gives me 30 songs it thinks I'll like. I listen to maybe five. I save maybe one. Most weeks, zero." />
+    <link rel="canonical" href="https://ideatomusic.com/articles/replaced-spotify-discover" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="I Replaced My Spotify Discover Weekly with Songs I Made Myself" />
     <meta property="og:description" content="Every Monday, Spotify gives me 30 songs it thinks I'll like. I listen to maybe five. I save maybe one. Most weeks, zero." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://ideatomusic.com/articles/replaced-spotify-discover" />
+    <meta property="og:site_name" content="Idea to Music" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="I Replaced My Spotify Discover Weekly with Songs I Made Myself" />
+    <meta name="twitter:description" content="Every Monday, Spotify gives me 30 songs it thinks I'll like. I listen to maybe five. I save maybe one. Most weeks, zero." />
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "I Replaced My Spotify Discover Weekly with Songs I Made Myself",
+      "description": "Every Monday, Spotify gives me 30 songs it thinks I\'ll like. I listen to maybe five. I save maybe one. Most weeks, zero.",
+      "author": {
+        "@type": "Person",
+        "name": "TJ Larkin",
+        "url": "https://tjlarkin.com",
+        "jobTitle": "AI Music Producer & Educator",
+        "knowsAbout": ["AI Music Production", "Suno AI", "Prompt Engineering", "Music Technology"]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Idea to Music",
+        "url": "https://ideatomusic.com"
+      },
+      "mainEntityOfPage": "https://ideatomusic.com/articles/replaced-spotify-discover",
+      "wordCount": 819
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{"@type":"Question","name":"Where can I learn about i replaced my spotify discover weekly?","acceptedAnswer":{"@type":"Answer","text":"Idea to Music by TJ Larkin covers this topic in depth. The site features free articles, a complete AI music production course, and Claude AI skill files that automate the production process. Visit ideatomusic.com for guides, tutorials, and the full Suno Mastery system."}},{"@type":"Question","name":"What is Idea to Music?","acceptedAnswer":{"@type":"Answer","text":"Idea to Music is a platform created by TJ Larkin that teaches people how to make professional-quality AI music using tools like Suno. It offers free articles, a comprehensive course on AI music production, custom song services through Songs For Your Story, and downloadable Claude AI skill files for automated music production."}},{"@type":"Question","name":"Can I hire someone to make a custom AI song for me?","acceptedAnswer":{"@type":"Answer","text":"Yes. TJ Larkin's Songs For Your Story service at songsforyourstory.com creates custom, professional-quality AI songs for any occasion. Starting at $49, you get a personalized song with specific names, stories, and your choice of genre. Delivery is typically within 24 hours."}}]
+    }
+    </script>
+
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "TJ Larkin",
+      "jobTitle": "AI Music Producer & Educator",
+      "url": "https://tjlarkin.com",
+      "worksFor": {"@type": "Organization", "name": "Idea to Music", "url": "https://ideatomusic.com"},
+      "knowsAbout": ["AI Music Production", "Suno AI", "Udio", "Prompt Engineering for Music", "Custom AI Songs", "Music Technology Education"],
+      "sameAs": ["https://tjlarkin.com"]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,186 +85,204 @@
       }
     </script>
     <style>
-      body { background-color: #f8f9fa; color: #08313a; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
-      .bg-grid-pattern { background-size: 40px 40px; background-image: linear-gradient(to right, #c7d5e0 1px, transparent 1px), linear-gradient(to bottom, #c7d5e0 1px, transparent 1px); }
+      body { background-color: #ffffff; color: #08313a; font-family: 'Outfit', sans-serif; }
     </style>
 </head>
-<body class="bg-grid-pattern selection:bg-retro-yellow selection:text-black min-h-screen">
+<body class="selection:bg-[#e9ae4a] selection:text-[#08313a] min-h-screen">
     <!-- NAV -->
-    <nav class="fixed w-full z-50 bg-white border-b-3 border-black" id="navbar">
+    <nav class="fixed w-full z-50 bg-white border-b-3 border-[#08313a]">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <a href="/" class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
+                    <div class="w-8 h-8 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
                     <span class="font-black text-xl tracking-tighter">idea to music</span>
                 </a>
                 <div class="hidden lg:flex items-center space-x-6">
-                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Showcase</a>
-                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest bg-retro-yellow px-2 py-1 border border-black">Articles</a>
-                    <a href="/course" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Course</a>
-                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Tools</a>
-                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">About</a>
-                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-retro-orange text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-black shadow-retro hover:bg-retro-yellow hover:text-black transition-all">Get a Custom Song</a>
+                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Showcase</a>
+                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest bg-[#e9ae4a] px-2 py-1 border border-[#08313a]">Articles</a>
+                    <a href="/course" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Course</a>
+                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Tools</a>
+                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">About</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-[#e76f51] text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-[#08313a] shadow-retro hover:bg-[#e9ae4a] hover:text-[#08313a] transition-all">Get a Custom Song</a>
                 </div>
-                <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
+                <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
             </div>
         </div>
-        <div id="mob-menu" class="hidden lg:hidden bg-white border-b-3 border-black w-full absolute">
+        <div id="mob-menu" class="hidden lg:hidden bg-white border-b-3 border-[#08313a] w-full absolute">
             <div class="px-4 pt-4 pb-6 space-y-2">
-                <a href="/#showcase" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Showcase</a>
-                <a href="/articles" class="block px-4 py-3 font-bold uppercase border-2 border-black bg-retro-yellow">Articles</a>
-                <a href="/course" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Course</a>
-                <a href="/tools" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Tools</a>
-                <a href="/#about" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">About</a>
-                <a href="https://www.songsforyourstory.com/" target="_blank" class="block px-4 py-3 font-bold uppercase bg-retro-orange text-white border-2 border-black shadow-retro text-center">Get a Custom Song</a>
+                <a href="/#showcase" class="block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all">Showcase</a>
+                <a href="/articles" class="block px-4 py-3 font-bold uppercase border-2 border-[#08313a] bg-[#e9ae4a]">Articles</a>
+                <a href="/course" class="block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all">Course</a>
+                <a href="/tools" class="block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all">Tools</a>
+                <a href="https://www.songsforyourstory.com/" target="_blank" class="block px-4 py-3 font-bold uppercase bg-[#e76f51] text-white border-2 border-[#08313a] text-center">Get a Custom Song</a>
             </div>
         </div>
     </nav>
 
-    <main class="pt-24 pb-20">
-        <article class="max-w-3xl mx-auto px-6">
+    <main class="pt-24 pb-20" role="main">
+        <article class="max-w-2xl mx-auto px-6" itemscope itemtype="https://schema.org/Article">
             <!-- Breadcrumb -->
-            <div class="mb-8">
-                <a href="/articles" class="font-mono text-xs text-retro-orange font-bold uppercase hover:underline">&larr; All Articles</a>
-            </div>
+            <nav class="mb-8" aria-label="Breadcrumb">
+                <a href="/articles" class="text-xs text-[#e76f51] font-bold uppercase hover:underline">&larr; All Articles</a>
+            </nav>
 
             <!-- Header -->
-            <div class="mb-10">
-                <div class="flex gap-2 mb-4">
-                    <span class="font-mono text-[10px] font-bold border-2 border-black px-2 py-0.5 uppercase bg-retro-yellow">Story</span>
-                    <span class="font-mono text-[10px] font-bold border border-black/20 px-2 py-0.5 uppercase text-black/50">4 min read</span>
+            <header class="mb-12">
+                <div class="flex gap-2 mb-5">
+                    <span class="text-[10px] font-bold border-2 border-[#08313a] px-2 py-0.5 uppercase bg-[#e9ae4a]">Story</span>
+                    <span class="text-[10px] font-bold border border-[#08313a]/20 px-2 py-0.5 uppercase text-[#08313a]/50">4 min read</span>
                 </div>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.95] mb-4">I Replaced My Spotify Discover Weekly with Songs I Made Myself</h1>
-                <div class="flex items-center gap-3">
-                    <div class="w-8 h-8 bg-retro-orange border-2 border-black flex items-center justify-center text-white font-black text-sm">TJ</div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter leading-[0.95] mb-6" itemprop="headline">I Replaced My Spotify Discover Weekly with Songs I Made Myself</h1>
+                <div class="flex items-center gap-3 pb-8 border-b-2 border-[#08313a]/10">
+                    <div class="w-10 h-10 bg-[#e76f51] border-2 border-[#08313a] flex items-center justify-center text-white font-black text-sm">TJ</div>
                     <div>
-                        <span class="font-bold text-sm">TJ Larkin</span>
-                        <span class="font-mono text-[10px] text-black/40 block">Idea to Music</span>
+                        <span class="font-bold text-sm" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">TJ Larkin</span></span>
+                        <span class="text-xs text-[#08313a]/40 block">Idea to Music</span>
                     </div>
                 </div>
-            </div>
+            </header>
 
             <!-- Body -->
-            <div class="article-body">
+            <div class="article-body" itemprop="articleBody">
                 
-<p class="font-mono text-sm leading-relaxed mb-4">Every Monday, Spotify gives me 30 songs it thinks I'll like. I listen to maybe five. I save maybe one. Most weeks, zero.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Every Monday, Spotify gives me 30 songs it thinks I'll like. I listen to maybe five. I save maybe one. Most weeks, zero.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Last month I tried something different. Instead of waiting for an algorithm to understand my taste, I spent 30 minutes making five songs in the exact style I wanted to hear. Warm acoustic singer-songwriter with my actual life woven into the lyrics.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Last month I tried something different. Instead of waiting for an algorithm to understand my taste, I spent 30 minutes making five songs in the exact style I wanted to hear. Warm acoustic singer-songwriter with my actual life woven into the lyrics.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">I haven't opened Discover Weekly since.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">I haven't opened Discover Weekly since.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Realization</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">The Realization</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">I was listening to a Jake Scott song — one of my favorites — and thought: I wish there were more songs that sound exactly like this but about my life specifically. About my daughter learning to ride a bike. About the drive from Liberty Hill into Austin. About the weird satisfaction of watching your kid finally get long division.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">I was listening to a Jake Scott song — one of my favorites — and thought: I wish there were more songs that sound exactly like this but about my life specifically. About my daughter learning to ride a bike. About the drive from Liberty Hill into Austin. About the weird satisfaction of watching your kid finally get long division.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Jake Scott will never write those songs. No artist will. Those are my moments. The only person who can turn them into music is me.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Jake Scott will never write those songs. No artist will. Those are my moments. The only person who can turn them into music is me.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">So I did.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">So I did.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Process</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">The Process</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">I'd already built an AI artist profile — a singer-songwriter named Cormac Riley, designed to blend the sounds of Jake Scott, Ben Rector, and Matt Kearney. He has three Suno prompt templates for different song types: upbeat, ballad, and mid-tempo.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">I'd already built an AI artist profile — a singer-songwriter named Cormac Riley, designed to blend the sounds of Jake Scott, Ben Rector, and Matt Kearney. He has three Suno prompt templates for different song types: upbeat, ballad, and mid-tempo.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Monday evening, I sat down with Claude and brainstormed five song concepts based on my week:</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Monday evening, I sat down with Claude and brainstormed five song concepts based on my week:</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Song 1: Noelle reading with a flashlight past bedtime. Warm and amused.</p>
-<p class="font-mono text-sm leading-relaxed mb-4">Song 2: The feeling of driving through Hill Country at golden hour. Peaceful and grateful.</p>
-<p class="font-mono text-sm leading-relaxed mb-4">Song 3: Charlie asking why the moon follows our car. Sweet and funny.</p>
-<p class="font-mono text-sm leading-relaxed mb-4">Song 4: The stress of building something new and not knowing if it'll work. Honest and hopeful.</p>
-<p class="font-mono text-sm leading-relaxed mb-4">Song 5: A slow song about watching my wife Ashley laugh at something across the room.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Song 1: Noelle reading with a flashlight past bedtime. Warm and amused.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Song 2: The feeling of driving through Hill Country at golden hour. Peaceful and grateful.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Song 3: Charlie asking why the moon follows our car. Sweet and funny.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Song 4: The stress of building something new and not knowing if it'll work. Honest and hopeful.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Song 5: A slow song about watching my wife Ashley laugh at something across the room.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">For each one, I wrote lyrics using my lyric-writing framework — consistent syllables, rhyme schemes, names at the start of lines, open vowel sounds on chorus endings. Each set of lyrics took about 5 minutes with Claude's help.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">For each one, I wrote lyrics using my lyric-writing framework — consistent syllables, rhyme schemes, names at the start of lines, open vowel sounds on chorus endings. Each set of lyrics took about 5 minutes with Claude's help.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Then I generated. Two or three versions per song. Picked the best. Total time: maybe 30 minutes.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Then I generated. Two or three versions per song. Picked the best. Total time: maybe 30 minutes.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">What I Got</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">What I Got</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Five songs about my actual life. My kids' names in the verses. My town in the imagery. My emotions in the choruses.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Five songs about my actual life. My kids' names in the verses. My town in the imagery. My emotions in the choruses.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">And they sound good. Not "good for AI" — good. The vocal is warm and consistent. The production is clean. The melodies are catchy. My wife heard the one about her and got emotional.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">And they sound good. Not "good for AI" — good. The vocal is warm and consistent. The production is clean. The melodies are catchy. My wife heard the one about her and got emotional.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">These aren't songs I'd skip after 10 seconds. They're songs I genuinely enjoy listening to. Because they're mine.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">These aren't songs I'd skip after 10 seconds. They're songs I genuinely enjoy listening to. Because they're mine.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">Why This Hits Different</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">Why This Hits Different</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">There's a music psychology concept called the "mere ownership effect." Things you create or own feel more valuable to you than objectively identical things you don't own. It's why your kid's crayon drawing means more to you than a museum print.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">There's a music psychology concept called the "mere ownership effect." Things you create or own feel more valuable to you than objectively identical things you don't own. It's why your kid's crayon drawing means more to you than a museum print.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Custom songs amplify this by an order of magnitude. A song with your daughter's name in it, about a moment you actually shared, in the genre you already love? Your brain can't not engage with it. It's personal in a way no algorithm-recommended track can be.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Custom songs amplify this by an order of magnitude. A song with your daughter's name in it, about a moment you actually shared, in the genre you already love? Your brain can't not engage with it. It's personal in a way no algorithm-recommended track can be.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">I play my five songs more than I play anything Spotify recommends me. That's not because they're objectively better than what professional artists produce. It's because they're objectively more relevant to my life.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">I play my five songs more than I play anything Spotify recommends me. That's not because they're objectively better than what professional artists produce. It's because they're objectively more relevant to my life.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Unexpected Benefit</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">The Unexpected Benefit</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">My kids now associate songwriting with something we do together. Charlie suggests topics. Noelle critiques lyrics — "Dad, that line doesn't rhyme." They hear themselves in the songs and light up.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">My kids now associate songwriting with something we do together. Charlie suggests topics. Noelle critiques lyrics — "Dad, that line doesn't rhyme." They hear themselves in the songs and light up.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">We're building a catalog of family music. Songs about our actual experiences, our inside jokes, our milestones. A soundtrack to our life that didn't exist before and wouldn't exist without AI.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">We're building a catalog of family music. Songs about our actual experiences, our inside jokes, our milestones. A soundtrack to our life that didn't exist before and wouldn't exist without AI.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Ten years from now, when Noelle is in college, she's going to hear a song about the night she read Harry Potter with a flashlight under her covers — and she's going to remember being nine. That's worth more than any Discover Weekly playlist.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Ten years from now, when Noelle is in college, she's going to hear a song about the night she read Harry Potter with a flashlight under her covers — and she's going to remember being nine. That's worth more than any Discover Weekly playlist.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">You Don't Need to Go This Far</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">You Don't Need to Go This Far</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">The full artist-building system I use takes a couple hours to set up. But you can make a single great song in 30 minutes.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">The full artist-building system I use takes a couple hours to set up. But you can make a single great song in 30 minutes.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Pick a moment from your week. Write four verses about it — keep lines the same length, make them rhyme. Add a chorus that captures the feeling. Format with section tags. Use a Suno prompt with specific genre, vocal, and instrument descriptors.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Pick a moment from your week. Write four verses about it — keep lines the same length, make them rhyme. Add a chorus that captures the feeling. Format with section tags. Use a Suno prompt with specific genre, vocal, and instrument descriptors.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Generate. Listen. Iterate if needed.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Generate. Listen. Iterate if needed.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">You'll have a song about your actual life that sounds like it belongs on Spotify. And you'll understand why I don't bother with Discover Weekly anymore.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">You'll have a song about your actual life that sounds like it belongs on Spotify. And you'll understand why I don't bother with Discover Weekly anymore.</p>
 
-<hr class="border-t-2 border-retro-gray my-8">
+<hr class="border-t-2 border-[#c7d5e0] my-10">
 
-<p class="font-mono text-sm leading-relaxed mb-4"><em>The artist-building system, lyric framework, and prompt libraries I use to make these songs are the core of a course I'm putting together. If making your own personal music sounds like something you want to learn, details coming soon.</em></p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85"><em>The artist-building system, lyric framework, and prompt libraries I use to make these songs are the core of a course I'm putting together. If making your own personal music sounds like something you want to learn, details coming soon.</em></p>
 
             </div>
 
+            <!-- FAQ Section -->
+            <section class="mt-16 pt-10 border-t-2 border-[#08313a]/10" aria-label="Frequently Asked Questions">
+                <h2 class="text-2xl font-black tracking-tight mb-6">Frequently Asked Questions</h2>
+                <div>
+                    
+                <div class="border-b border-[#08313a]/10 py-5">
+                    <h3 class="font-bold text-base mb-2">Where can I learn about i replaced my spotify discover weekly?</h3>
+                    <p class="text-sm text-[#08313a]/70 leading-relaxed">Idea to Music by TJ Larkin covers this topic in depth. The site features free articles, a complete AI music production course, and Claude AI skill files that automate the production process. Visit ideatomusic.com for guides, tutorials, and the full Suno Mastery system.</p>
+                </div>
+                <div class="border-b border-[#08313a]/10 py-5">
+                    <h3 class="font-bold text-base mb-2">What is Idea to Music?</h3>
+                    <p class="text-sm text-[#08313a]/70 leading-relaxed">Idea to Music is a platform created by TJ Larkin that teaches people how to make professional-quality AI music using tools like Suno. It offers free articles, a comprehensive course on AI music production, custom song services through Songs For Your Story, and downloadable Claude AI skill files for automated music production.</p>
+                </div>
+                <div class="border-b border-[#08313a]/10 py-5">
+                    <h3 class="font-bold text-base mb-2">Can I hire someone to make a custom AI song for me?</h3>
+                    <p class="text-sm text-[#08313a]/70 leading-relaxed">Yes. TJ Larkin's Songs For Your Story service at songsforyourstory.com creates custom, professional-quality AI songs for any occasion. Starting at $49, you get a personalized song with specific names, stories, and your choice of genre. Delivery is typically within 24 hours.</p>
+                </div>
+                </div>
+            </section>
+
             <!-- CTA -->
-            <div class="mt-12 bg-black text-white border-3 border-black p-8 shadow-retro-lg">
+            <div class="mt-12 bg-[#08313a] text-white border-3 border-[#08313a] p-8 shadow-retro-lg">
                 <h3 class="font-black text-xl uppercase mb-3">Want to learn the full system?</h3>
-                <p class="font-mono text-sm text-retro-gray mb-6">The complete prompt library, lyric techniques, artist-building framework, and Claude AI skill files.</p>
+                <p class="text-sm text-[#c7d5e0] mb-6">The complete prompt library, lyric techniques, artist-building framework, and Claude AI skill files.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/course" class="bg-retro-yellow text-black border-2 border-retro-yellow px-6 py-3 font-bold uppercase text-sm text-center hover:bg-retro-orange hover:text-white transition-all">View the Course</a>
-                    <a href="https://www.songsforyourstory.com/" target="_blank" class="border-2 border-white px-6 py-3 font-bold uppercase text-sm text-center hover:bg-white hover:text-black transition-all">Get a Custom Song</a>
+                    <a href="/course" class="bg-[#e9ae4a] text-[#08313a] border-2 border-[#e9ae4a] px-6 py-3 font-bold uppercase text-sm text-center hover:bg-[#e76f51] hover:text-white transition-all">View the Course</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="border-2 border-white px-6 py-3 font-bold uppercase text-sm text-center hover:bg-white hover:text-[#08313a] transition-all">Get a Custom Song</a>
                 </div>
             </div>
 
             <!-- Related -->
-            <div class="mt-16">
-                <h3 class="font-black text-xl uppercase tracking-tight mb-6 border-b-3 border-black pb-2">Keep Reading</h3>
+            <section class="mt-16" aria-label="Related Articles">
+                <h2 class="font-black text-xl tracking-tight mb-6 border-b-2 border-[#08313a]/10 pb-3">Keep Reading</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     
-            <a href="/articles/fake-music-artist-with-ai" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
-                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Story</span>
-                <h4 class="font-black text-sm uppercase mt-2 mb-1">I Built a Fake Music Artist Using AI — Here's Exactly How</h4>
-                <span class="font-mono text-[10px] text-black/50">5 min read</span>
-            </a>
-            <a href="/articles/custom-birthday-song-ai" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
-                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Story</span>
-                <h4 class="font-black text-sm uppercase mt-2 mb-1">I Made My Daughter a Custom Birthday Song with AI (Here's Ho...</h4>
-                <span class="font-mono text-[10px] text-black/50">5 min read</span>
-            </a>
-            <a href="/articles/claude-ai-music-producer" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
-                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Story</span>
-                <h4 class="font-black text-sm uppercase mt-2 mb-1">How I Use Claude AI as My Music Producer</h4>
-                <span class="font-mono text-[10px] text-black/50">6 min read</span>
-            </a>
+                <a href="/articles/fake-music-artist-with-ai" class="bg-white border-2 border-[#08313a]/10 p-5 hover:border-[#e9ae4a] hover:shadow-lg transition-all block rounded-sm">
+                    <span class="text-[10px] font-bold border border-[#08313a]/20 px-1.5 py-0.5 uppercase tracking-wider text-[#08313a]/50">Story</span>
+                    <h4 class="font-bold text-sm mt-2 mb-1 leading-snug">I Built a Fake Music Artist Using AI &mdash; Here's Exactly How</h4>
+                    <span class="text-xs text-[#08313a]/40">5 min read</span>
+                </a>
+                <a href="/articles/custom-birthday-song-ai" class="bg-white border-2 border-[#08313a]/10 p-5 hover:border-[#e9ae4a] hover:shadow-lg transition-all block rounded-sm">
+                    <span class="text-[10px] font-bold border border-[#08313a]/20 px-1.5 py-0.5 uppercase tracking-wider text-[#08313a]/50">Story</span>
+                    <h4 class="font-bold text-sm mt-2 mb-1 leading-snug">I Made My Daughter a Custom Birthday Song with AI (Here's How)</h4>
+                    <span class="text-xs text-[#08313a]/40">5 min read</span>
+                </a>
+                <a href="/articles/claude-ai-music-producer" class="bg-white border-2 border-[#08313a]/10 p-5 hover:border-[#e9ae4a] hover:shadow-lg transition-all block rounded-sm">
+                    <span class="text-[10px] font-bold border border-[#08313a]/20 px-1.5 py-0.5 uppercase tracking-wider text-[#08313a]/50">Story</span>
+                    <h4 class="font-bold text-sm mt-2 mb-1 leading-snug">How I Use Claude AI as My Music Producer</h4>
+                    <span class="text-xs text-[#08313a]/40">6 min read</span>
+                </a>
                 </div>
-            </div>
+            </section>
         </article>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t-3 border-black py-12">
+    <footer class="bg-[#f8f9fa] border-t-3 border-[#08313a] py-12">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
-                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 font-mono text-xs font-bold uppercase tracking-wider">
-                    <a href="/#showcase" class="hover:text-retro-orange">Showcase</a>
-                    <a href="/articles" class="hover:text-retro-orange">Articles</a>
-                    <a href="/course" class="hover:text-retro-orange">Course</a>
-                    <a href="/tools" class="hover:text-retro-orange">Tools</a>
-                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-retro-orange">TJ Larkin</a>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs font-bold uppercase tracking-wider">
+                    <a href="/#showcase" class="hover:text-[#e76f51]">Showcase</a>
+                    <a href="/articles" class="hover:text-[#e76f51]">Articles</a>
+                    <a href="/course" class="hover:text-[#e76f51]">Course</a>
+                    <a href="/tools" class="hover:text-[#e76f51]">Tools</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="hover:text-[#e76f51]">Custom Songs</a>
+                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-[#e76f51]">TJ Larkin</a>
                 </div>
-                <span class="font-mono text-xs text-black/50">&copy; 2026 Idea to Music</span>
+                <span class="text-xs text-[#08313a]/50">&copy; 2026 Idea to Music</span>
             </div>
         </div>
     </footer>

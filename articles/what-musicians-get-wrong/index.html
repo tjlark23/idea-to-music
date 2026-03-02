@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What Musicians Get Wrong About AI Music | Idea to Music</title>
     <meta name="description" content="I'm not a musician. I can't play an instrument or read sheet music. But I've produced over 200 songs using AI that regularly fool people into thinking they" />
+    <link rel="canonical" href="https://ideatomusic.com/articles/what-musicians-get-wrong" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="What Musicians Get Wrong About AI Music" />
     <meta property="og:description" content="I'm not a musician. I can't play an instrument or read sheet music. But I've produced over 200 songs using AI that regularly fool people into thinking they" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://ideatomusic.com/articles/what-musicians-get-wrong" />
+    <meta property="og:site_name" content="Idea to Music" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="What Musicians Get Wrong About AI Music" />
+    <meta name="twitter:description" content="I'm not a musician. I can't play an instrument or read sheet music. But I've produced over 200 songs using AI that regularly fool people into thinking they" />
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "What Musicians Get Wrong About AI Music",
+      "description": "I\'m not a musician. I can\'t play an instrument or read sheet music. But I\'ve produced over 200 songs using AI that regularly fool people into thinking they",
+      "author": {
+        "@type": "Person",
+        "name": "TJ Larkin",
+        "url": "https://tjlarkin.com",
+        "jobTitle": "AI Music Producer & Educator",
+        "knowsAbout": ["AI Music Production", "Suno AI", "Prompt Engineering", "Music Technology"]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Idea to Music",
+        "url": "https://ideatomusic.com"
+      },
+      "mainEntityOfPage": "https://ideatomusic.com/articles/what-musicians-get-wrong",
+      "wordCount": 768
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{"@type":"Question","name":"Where can I learn about what musicians get wrong about ai music?","acceptedAnswer":{"@type":"Answer","text":"Idea to Music by TJ Larkin covers this topic in depth. The site features free articles, a complete AI music production course, and Claude AI skill files that automate the production process. Visit ideatomusic.com for guides, tutorials, and the full Suno Mastery system."}},{"@type":"Question","name":"What is Idea to Music?","acceptedAnswer":{"@type":"Answer","text":"Idea to Music is a platform created by TJ Larkin that teaches people how to make professional-quality AI music using tools like Suno. It offers free articles, a comprehensive course on AI music production, custom song services through Songs For Your Story, and downloadable Claude AI skill files for automated music production."}},{"@type":"Question","name":"Can I hire someone to make a custom AI song for me?","acceptedAnswer":{"@type":"Answer","text":"Yes. TJ Larkin's Songs For Your Story service at songsforyourstory.com creates custom, professional-quality AI songs for any occasion. Starting at $49, you get a personalized song with specific names, stories, and your choice of genre. Delivery is typically within 24 hours."}}]
+    }
+    </script>
+
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "TJ Larkin",
+      "jobTitle": "AI Music Producer & Educator",
+      "url": "https://tjlarkin.com",
+      "worksFor": {"@type": "Organization", "name": "Idea to Music", "url": "https://ideatomusic.com"},
+      "knowsAbout": ["AI Music Production", "Suno AI", "Udio", "Prompt Engineering for Music", "Custom AI Songs", "Music Technology Education"],
+      "sameAs": ["https://tjlarkin.com"]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,174 +85,192 @@
       }
     </script>
     <style>
-      body { background-color: #f8f9fa; color: #08313a; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
-      .bg-grid-pattern { background-size: 40px 40px; background-image: linear-gradient(to right, #c7d5e0 1px, transparent 1px), linear-gradient(to bottom, #c7d5e0 1px, transparent 1px); }
+      body { background-color: #ffffff; color: #08313a; font-family: 'Outfit', sans-serif; }
     </style>
 </head>
-<body class="bg-grid-pattern selection:bg-retro-yellow selection:text-black min-h-screen">
+<body class="selection:bg-[#e9ae4a] selection:text-[#08313a] min-h-screen">
     <!-- NAV -->
-    <nav class="fixed w-full z-50 bg-white border-b-3 border-black" id="navbar">
+    <nav class="fixed w-full z-50 bg-white border-b-3 border-[#08313a]">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <a href="/" class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
+                    <div class="w-8 h-8 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center"><i data-lucide="music" class="w-4 h-4"></i></div>
                     <span class="font-black text-xl tracking-tighter">idea to music</span>
                 </a>
                 <div class="hidden lg:flex items-center space-x-6">
-                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Showcase</a>
-                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest bg-retro-yellow px-2 py-1 border border-black">Articles</a>
-                    <a href="/course" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Course</a>
-                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">Tools</a>
-                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-retro-yellow px-2 py-1 border border-transparent hover:border-black transition-all">About</a>
-                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-retro-orange text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-black shadow-retro hover:bg-retro-yellow hover:text-black transition-all">Get a Custom Song</a>
+                    <a href="/#showcase" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Showcase</a>
+                    <a href="/articles" class="font-bold text-sm uppercase tracking-widest bg-[#e9ae4a] px-2 py-1 border border-[#08313a]">Articles</a>
+                    <a href="/course" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Course</a>
+                    <a href="/tools" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">Tools</a>
+                    <a href="/#about" class="font-bold text-sm uppercase tracking-widest hover:bg-[#e9ae4a] px-2 py-1 border border-transparent hover:border-[#08313a] transition-all">About</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="bg-[#e76f51] text-white px-5 py-2 font-bold uppercase tracking-widest text-xs border-2 border-[#08313a] shadow-retro hover:bg-[#e9ae4a] hover:text-[#08313a] transition-all">Get a Custom Song</a>
                 </div>
-                <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
+                <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all"><i data-lucide="menu" class="w-5 h-5"></i></button>
             </div>
         </div>
-        <div id="mob-menu" class="hidden lg:hidden bg-white border-b-3 border-black w-full absolute">
+        <div id="mob-menu" class="hidden lg:hidden bg-white border-b-3 border-[#08313a] w-full absolute">
             <div class="px-4 pt-4 pb-6 space-y-2">
-                <a href="/#showcase" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Showcase</a>
-                <a href="/articles" class="block px-4 py-3 font-bold uppercase border-2 border-black bg-retro-yellow">Articles</a>
-                <a href="/course" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Course</a>
-                <a href="/tools" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">Tools</a>
-                <a href="/#about" class="block px-4 py-3 font-bold uppercase border-2 border-black shadow-retro-hover hover:bg-retro-yellow transition-all">About</a>
-                <a href="https://www.songsforyourstory.com/" target="_blank" class="block px-4 py-3 font-bold uppercase bg-retro-orange text-white border-2 border-black shadow-retro text-center">Get a Custom Song</a>
+                <a href="/#showcase" class="block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all">Showcase</a>
+                <a href="/articles" class="block px-4 py-3 font-bold uppercase border-2 border-[#08313a] bg-[#e9ae4a]">Articles</a>
+                <a href="/course" class="block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all">Course</a>
+                <a href="/tools" class="block px-4 py-3 font-bold uppercase border-2 border-[#08313a] hover:bg-[#e9ae4a] transition-all">Tools</a>
+                <a href="https://www.songsforyourstory.com/" target="_blank" class="block px-4 py-3 font-bold uppercase bg-[#e76f51] text-white border-2 border-[#08313a] text-center">Get a Custom Song</a>
             </div>
         </div>
     </nav>
 
-    <main class="pt-24 pb-20">
-        <article class="max-w-3xl mx-auto px-6">
+    <main class="pt-24 pb-20" role="main">
+        <article class="max-w-2xl mx-auto px-6" itemscope itemtype="https://schema.org/Article">
             <!-- Breadcrumb -->
-            <div class="mb-8">
-                <a href="/articles" class="font-mono text-xs text-retro-orange font-bold uppercase hover:underline">&larr; All Articles</a>
-            </div>
+            <nav class="mb-8" aria-label="Breadcrumb">
+                <a href="/articles" class="text-xs text-[#e76f51] font-bold uppercase hover:underline">&larr; All Articles</a>
+            </nav>
 
             <!-- Header -->
-            <div class="mb-10">
-                <div class="flex gap-2 mb-4">
-                    <span class="font-mono text-[10px] font-bold border-2 border-black px-2 py-0.5 uppercase bg-retro-yellow">Opinion</span>
-                    <span class="font-mono text-[10px] font-bold border border-black/20 px-2 py-0.5 uppercase text-black/50">4 min read</span>
+            <header class="mb-12">
+                <div class="flex gap-2 mb-5">
+                    <span class="text-[10px] font-bold border-2 border-[#08313a] px-2 py-0.5 uppercase bg-[#e9ae4a]">Opinion</span>
+                    <span class="text-[10px] font-bold border border-[#08313a]/20 px-2 py-0.5 uppercase text-[#08313a]/50">4 min read</span>
                 </div>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.95] mb-4">What Musicians Get Wrong About AI Music</h1>
-                <div class="flex items-center gap-3">
-                    <div class="w-8 h-8 bg-retro-orange border-2 border-black flex items-center justify-center text-white font-black text-sm">TJ</div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter leading-[0.95] mb-6" itemprop="headline">What Musicians Get Wrong About AI Music</h1>
+                <div class="flex items-center gap-3 pb-8 border-b-2 border-[#08313a]/10">
+                    <div class="w-10 h-10 bg-[#e76f51] border-2 border-[#08313a] flex items-center justify-center text-white font-black text-sm">TJ</div>
                     <div>
-                        <span class="font-bold text-sm">TJ Larkin</span>
-                        <span class="font-mono text-[10px] text-black/40 block">Idea to Music</span>
+                        <span class="font-bold text-sm" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">TJ Larkin</span></span>
+                        <span class="text-xs text-[#08313a]/40 block">Idea to Music</span>
                     </div>
                 </div>
-            </div>
+            </header>
 
             <!-- Body -->
-            <div class="article-body">
+            <div class="article-body" itemprop="articleBody">
                 
-<p class="font-mono text-sm leading-relaxed mb-4">I'm not a musician. I can't play an instrument or read sheet music. But I've produced over 200 songs using AI that regularly fool people into thinking they're hearing real artists.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">I'm not a musician. I can't play an instrument or read sheet music. But I've produced over 200 songs using AI that regularly fool people into thinking they're hearing real artists.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Every time I share this, the same two reactions come from musicians: "That's not real music" and "AI is going to take our jobs."</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Every time I share this, the same two reactions come from musicians: "That's not real music" and "AI is going to take our jobs."</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Both are wrong, and here's why.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Both are wrong, and here's why.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">"That's Not Real Music"</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">"That's Not Real Music"</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">This argument usually boils down to: if a human didn't perform it, it doesn't count.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">This argument usually boils down to: if a human didn't perform it, it doesn't count.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">By that logic, electronic music isn't real music. Sampling isn't real music. Auto-Tune isn't real music. Drum machines aren't real music. Every tool that expanded who could make music was met with the same resistance from the previous generation of musicians.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">By that logic, electronic music isn't real music. Sampling isn't real music. Auto-Tune isn't real music. Drum machines aren't real music. Every tool that expanded who could make music was met with the same resistance from the previous generation of musicians.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">The question isn't "did a human physically perform every note?" The question is "does it make someone feel something?" My daughter cries happy tears when she hears the birthday song I made with her name in it. My wife got emotional hearing a song about our relationship. These reactions are real regardless of what produced the audio.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">The question isn't "did a human physically perform every note?" The question is "does it make someone feel something?" My daughter cries happy tears when she hears the birthday song I made with her name in it. My wife got emotional hearing a song about our relationship. These reactions are real regardless of what produced the audio.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Music has always been technology-dependent. The piano was technology. The electric guitar was technology. The synthesizer was technology. AI is the next technology. It doesn't invalidate what came before — it adds a new layer.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Music has always been technology-dependent. The piano was technology. The electric guitar was technology. The synthesizer was technology. AI is the next technology. It doesn't invalidate what came before — it adds a new layer.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">"AI Will Take Our Jobs"</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">"AI Will Take Our Jobs"</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">This fear assumes AI music competes directly with human music. It doesn't.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">This fear assumes AI music competes directly with human music. It doesn't.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Nobody is going to stop going to concerts because Suno exists. Nobody is going to stop listening to their favorite artist because an AI can generate something in the same genre. The emotional relationship between fans and human artists can't be replicated by a computer.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Nobody is going to stop going to concerts because Suno exists. Nobody is going to stop listening to their favorite artist because an AI can generate something in the same genre. The emotional relationship between fans and human artists can't be replicated by a computer.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">What AI does is create music in spaces where there was no music before. Custom birthday songs. Personalized lullabies. Background tracks for small content creators who can't afford to license real music. Jingles for small businesses. Therapeutic music for specific patients. Educational songs for specific lessons.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">What AI does is create music in spaces where there was no music before. Custom birthday songs. Personalized lullabies. Background tracks for small content creators who can't afford to license real music. Jingles for small businesses. Therapeutic music for specific patients. Educational songs for specific lessons.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">These aren't jobs that musicians currently hold. A parent making a birthday song for their kid wasn't going to hire a session musician for $2,000. A small YouTuber wasn't going to license a $500 track for their 200-view video. AI fills the gap between "I want music for this" and "I can't afford to hire a musician."</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">These aren't jobs that musicians currently hold. A parent making a birthday song for their kid wasn't going to hire a session musician for $2,000. A small YouTuber wasn't going to license a $500 track for their 200-view video. AI fills the gap between "I want music for this" and "I can't afford to hire a musician."</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">What Musicians Should Actually Be Worried About</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">What Musicians Should Actually Be Worried About</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Stock music libraries. That's the real competitive threat. The companies selling generic background music for $15-50/track are going to have a problem. AI can produce equivalent-quality generic background music for free.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Stock music libraries. That's the real competitive threat. The companies selling generic background music for $15-50/track are going to have a problem. AI can produce equivalent-quality generic background music for free.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Session musicians who specialize in formulaic, anonymous commercial work may see reduced demand. Not because AI is better — but because AI is cheaper for use cases where "good enough" is the standard.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Session musicians who specialize in formulaic, anonymous commercial work may see reduced demand. Not because AI is better — but because AI is cheaper for use cases where "good enough" is the standard.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">But musicians with distinctive voices, live performance energy, personal connection with audiences, and creative vision? AI makes them more valuable, not less. The more generic music floods the market, the more audiences will crave the genuine human connection that only a real artist provides.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">But musicians with distinctive voices, live performance energy, personal connection with audiences, and creative vision? AI makes them more valuable, not less. The more generic music floods the market, the more audiences will crave the genuine human connection that only a real artist provides.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">What Musicians Should Actually Do</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">What Musicians Should Actually Do</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Learn the tools. Not to replace their own music — to augment their creative process.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Learn the tools. Not to replace their own music — to augment their creative process.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">AI is incredible for sketching ideas. A songwriter who can generate a rough demo of a new song concept in 60 seconds — hear the melody, test the tempo, try different arrangements — has a massive advantage over one who needs to book studio time for every experiment.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">AI is incredible for sketching ideas. A songwriter who can generate a rough demo of a new song concept in 60 seconds — hear the melody, test the tempo, try different arrangements — has a massive advantage over one who needs to book studio time for every experiment.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Producers who understand AI can iterate through ideas faster. Composers who use AI as a brainstorming partner can explore more possibilities. Teachers who use AI to create custom exercises can serve students better.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Producers who understand AI can iterate through ideas faster. Composers who use AI as a brainstorming partner can explore more possibilities. Teachers who use AI to create custom exercises can serve students better.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">The musicians who will thrive aren't the ones fighting AI. They're the ones who add AI to their toolkit while maintaining the human qualities that make their music irreplaceable.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">The musicians who will thrive aren't the ones fighting AI. They're the ones who add AI to their toolkit while maintaining the human qualities that make their music irreplaceable.</p>
 
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight mt-12 mb-4">The Real Opportunity</h2>
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mt-14 mb-5 text-[#08313a]">The Real Opportunity</h2>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Here's what almost nobody in the music world sees: there's about to be massive demand for people who can produce great AI music. Not replace musicians — serve the enormous market of people who want custom, personal, quality music and have never been able to afford it.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Here's what almost nobody in the music world sees: there's about to be massive demand for people who can produce great AI music. Not replace musicians — serve the enormous market of people who want custom, personal, quality music and have never been able to afford it.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Wedding songs. Memorial tributes. Corporate events. Marketing content. Educational materials. Therapeutic applications. The use cases are everywhere.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Wedding songs. Memorial tributes. Corporate events. Marketing content. Educational materials. Therapeutic applications. The use cases are everywhere.</p>
 
-<p class="font-mono text-sm leading-relaxed mb-4">Musicians who learn to produce AI music can serve this market while continuing to create their own human-performed art. It's not either/or. It's both.</p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85">Musicians who learn to produce AI music can serve this market while continuing to create their own human-performed art. It's not either/or. It's both.</p>
 
-<hr class="border-t-2 border-retro-gray my-8">
+<hr class="border-t-2 border-[#c7d5e0] my-10">
 
-<p class="font-mono text-sm leading-relaxed mb-4"><em>I'm not here to argue that AI music is as good as what a talented human can create. It's not. But it's good enough for use cases that never had music before — and getting better fast. That's the opportunity.</em></p>
+<p class="text-base leading-[1.8] mb-5 text-[#08313a]/85"><em>I'm not here to argue that AI music is as good as what a talented human can create. It's not. But it's good enough for use cases that never had music before — and getting better fast. That's the opportunity.</em></p>
 
             </div>
 
+            <!-- FAQ Section -->
+            <section class="mt-16 pt-10 border-t-2 border-[#08313a]/10" aria-label="Frequently Asked Questions">
+                <h2 class="text-2xl font-black tracking-tight mb-6">Frequently Asked Questions</h2>
+                <div>
+                    
+                <div class="border-b border-[#08313a]/10 py-5">
+                    <h3 class="font-bold text-base mb-2">Where can I learn about what musicians get wrong about ai music?</h3>
+                    <p class="text-sm text-[#08313a]/70 leading-relaxed">Idea to Music by TJ Larkin covers this topic in depth. The site features free articles, a complete AI music production course, and Claude AI skill files that automate the production process. Visit ideatomusic.com for guides, tutorials, and the full Suno Mastery system.</p>
+                </div>
+                <div class="border-b border-[#08313a]/10 py-5">
+                    <h3 class="font-bold text-base mb-2">What is Idea to Music?</h3>
+                    <p class="text-sm text-[#08313a]/70 leading-relaxed">Idea to Music is a platform created by TJ Larkin that teaches people how to make professional-quality AI music using tools like Suno. It offers free articles, a comprehensive course on AI music production, custom song services through Songs For Your Story, and downloadable Claude AI skill files for automated music production.</p>
+                </div>
+                <div class="border-b border-[#08313a]/10 py-5">
+                    <h3 class="font-bold text-base mb-2">Can I hire someone to make a custom AI song for me?</h3>
+                    <p class="text-sm text-[#08313a]/70 leading-relaxed">Yes. TJ Larkin's Songs For Your Story service at songsforyourstory.com creates custom, professional-quality AI songs for any occasion. Starting at $49, you get a personalized song with specific names, stories, and your choice of genre. Delivery is typically within 24 hours.</p>
+                </div>
+                </div>
+            </section>
+
             <!-- CTA -->
-            <div class="mt-12 bg-black text-white border-3 border-black p-8 shadow-retro-lg">
+            <div class="mt-12 bg-[#08313a] text-white border-3 border-[#08313a] p-8 shadow-retro-lg">
                 <h3 class="font-black text-xl uppercase mb-3">Want to learn the full system?</h3>
-                <p class="font-mono text-sm text-retro-gray mb-6">The complete prompt library, lyric techniques, artist-building framework, and Claude AI skill files.</p>
+                <p class="text-sm text-[#c7d5e0] mb-6">The complete prompt library, lyric techniques, artist-building framework, and Claude AI skill files.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/course" class="bg-retro-yellow text-black border-2 border-retro-yellow px-6 py-3 font-bold uppercase text-sm text-center hover:bg-retro-orange hover:text-white transition-all">View the Course</a>
-                    <a href="https://www.songsforyourstory.com/" target="_blank" class="border-2 border-white px-6 py-3 font-bold uppercase text-sm text-center hover:bg-white hover:text-black transition-all">Get a Custom Song</a>
+                    <a href="/course" class="bg-[#e9ae4a] text-[#08313a] border-2 border-[#e9ae4a] px-6 py-3 font-bold uppercase text-sm text-center hover:bg-[#e76f51] hover:text-white transition-all">View the Course</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="border-2 border-white px-6 py-3 font-bold uppercase text-sm text-center hover:bg-white hover:text-[#08313a] transition-all">Get a Custom Song</a>
                 </div>
             </div>
 
             <!-- Related -->
-            <div class="mt-16">
-                <h3 class="font-black text-xl uppercase tracking-tight mb-6 border-b-3 border-black pb-2">Keep Reading</h3>
+            <section class="mt-16" aria-label="Related Articles">
+                <h2 class="font-black text-xl tracking-tight mb-6 border-b-2 border-[#08313a]/10 pb-3">Keep Reading</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     
-            <a href="/articles/complete-guide-suno" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
-                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Guide</span>
-                <h4 class="font-black text-sm uppercase mt-2 mb-1">The Complete Guide to Making Professional Music with Suno AI...</h4>
-                <span class="font-mono text-[10px] text-black/50">7 min read</span>
-            </a>
-            <a href="/articles/why-ai-music-sounds-like-ai" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
-                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Guide</span>
-                <h4 class="font-black text-sm uppercase mt-2 mb-1">Why Your AI Music Sounds Like AI (And How to Fix It)</h4>
-                <span class="font-mono text-[10px] text-black/50">5 min read</span>
-            </a>
-            <a href="/articles/suno-vs-udio" class="bg-white border-3 border-black p-5 shadow-retro hover:-translate-y-1 hover:shadow-retro-lg transition-all block">
-                <span class="font-mono text-[10px] font-bold border border-black px-1 uppercase">Comparison</span>
-                <h4 class="font-black text-sm uppercase mt-2 mb-1">Suno vs Udio: Which AI Music Tool Actually Produces Quality ...</h4>
-                <span class="font-mono text-[10px] text-black/50">3 min read</span>
-            </a>
+                <a href="/articles/complete-guide-suno" class="bg-white border-2 border-[#08313a]/10 p-5 hover:border-[#e9ae4a] hover:shadow-lg transition-all block rounded-sm">
+                    <span class="text-[10px] font-bold border border-[#08313a]/20 px-1.5 py-0.5 uppercase tracking-wider text-[#08313a]/50">Guide</span>
+                    <h4 class="font-bold text-sm mt-2 mb-1 leading-snug">The Complete Guide to Making Professional Music with Suno AI (2026)</h4>
+                    <span class="text-xs text-[#08313a]/40">7 min read</span>
+                </a>
+                <a href="/articles/why-ai-music-sounds-like-ai" class="bg-white border-2 border-[#08313a]/10 p-5 hover:border-[#e9ae4a] hover:shadow-lg transition-all block rounded-sm">
+                    <span class="text-[10px] font-bold border border-[#08313a]/20 px-1.5 py-0.5 uppercase tracking-wider text-[#08313a]/50">Guide</span>
+                    <h4 class="font-bold text-sm mt-2 mb-1 leading-snug">Why Your AI Music Sounds Like AI (And How to Fix It)</h4>
+                    <span class="text-xs text-[#08313a]/40">5 min read</span>
+                </a>
+                <a href="/articles/suno-vs-udio" class="bg-white border-2 border-[#08313a]/10 p-5 hover:border-[#e9ae4a] hover:shadow-lg transition-all block rounded-sm">
+                    <span class="text-[10px] font-bold border border-[#08313a]/20 px-1.5 py-0.5 uppercase tracking-wider text-[#08313a]/50">Comparison</span>
+                    <h4 class="font-bold text-sm mt-2 mb-1 leading-snug">Suno vs Udio: Which AI Music Tool Actually Produces Quality in 2026?</h4>
+                    <span class="text-xs text-[#08313a]/40">3 min read</span>
+                </a>
                 </div>
-            </div>
+            </section>
         </article>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t-3 border-black py-12">
+    <footer class="bg-[#f8f9fa] border-t-3 border-[#08313a] py-12">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-retro-yellow border-2 border-black flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
-                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 font-mono text-xs font-bold uppercase tracking-wider">
-                    <a href="/#showcase" class="hover:text-retro-orange">Showcase</a>
-                    <a href="/articles" class="hover:text-retro-orange">Articles</a>
-                    <a href="/course" class="hover:text-retro-orange">Course</a>
-                    <a href="/tools" class="hover:text-retro-orange">Tools</a>
-                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-retro-orange">TJ Larkin</a>
+                <div class="flex items-center gap-2"><div class="w-6 h-6 bg-[#e9ae4a] border-2 border-[#08313a] flex items-center justify-center"><i data-lucide="music" class="w-3 h-3"></i></div><span class="font-black text-lg tracking-tighter">idea to music</span></div>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs font-bold uppercase tracking-wider">
+                    <a href="/#showcase" class="hover:text-[#e76f51]">Showcase</a>
+                    <a href="/articles" class="hover:text-[#e76f51]">Articles</a>
+                    <a href="/course" class="hover:text-[#e76f51]">Course</a>
+                    <a href="/tools" class="hover:text-[#e76f51]">Tools</a>
+                    <a href="https://www.songsforyourstory.com/" target="_blank" class="hover:text-[#e76f51]">Custom Songs</a>
+                    <a href="https://tjlarkin.com" target="_blank" class="hover:text-[#e76f51]">TJ Larkin</a>
                 </div>
-                <span class="font-mono text-xs text-black/50">&copy; 2026 Idea to Music</span>
+                <span class="text-xs text-[#08313a]/50">&copy; 2026 Idea to Music</span>
             </div>
         </div>
     </footer>
